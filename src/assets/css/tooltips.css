@@ -1,0 +1,245 @@
+/*Tooltip*/
+.has-tooltip-active::before{
+    font-family: Arial, Helvetica, sans-serif!important;
+    line-height: normal!important;
+}
+.has-tooltip-active::before,
+.has-tooltip-active::after{
+    position:absolute!important
+}
+.has-tooltip-active:hover::before{
+	background: #7992FF;
+	border-radius: 7px;
+	content: attr(data-tooltip);
+	padding: 0.5rem 1rem;
+	text-overflow: ellipsis;
+	white-space: pre;
+	box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: .75rem;
+    hyphens: auto;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute!important;
+    z-index: 1021;
+}
+.has-tooltip-active:hover::after{    
+	content: '';
+	box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    border-style: solid;
+    font-size: .75rem;
+    hyphens: auto;
+    border-width: 6px;
+        overflow: hidden;
+    pointer-events: none;
+    position: absolute!important;
+    z-index: 1020;
+    opacity: 0;
+}
+.has-tooltip-active.has-tooltip-right::before{ /*Right Recuadro base */
+    content:'';
+    top: auto;
+    right: -11px;
+    bottom: 50%;
+    left: auto;
+    margin-top: auto;
+	opacity: 0;
+    margin-bottom: auto;
+    transform: translate(30%, 50%); 
+}
+.has-tooltip-active.has-tooltip-right::after{/*Right Flecha base */
+    content:'';
+    top: auto;
+    right: 0;
+    bottom: 50%;
+    left: auto;
+    margin-top: auto;
+    margin-right: 0px;
+    margin-bottom: -2px;
+    margin-left: auto;
+    border-color: transparent #7992FF transparent transparent; 
+    transform: translate(1000%, 50%); opacity: 0;
+}
+.has-tooltip-active.has-tooltip-right:hover::before{/*Right recuadro*/
+	content:attr(data-tooltip);
+    font-family: 'Dongle light';
+    top: auto;
+    right: -11px;
+    bottom: 50%;
+    left: auto;
+    margin-top: auto;
+	opacity: 1;
+    margin-bottom: auto;
+    transform: translate(100%, 50%); 
+	transition: all .3s
+}
+.has-tooltip-active.has-tooltip-right:hover::after{/*Right flecha*/
+	top: auto;
+    right: 0;
+    bottom: 50%;
+    left: auto;
+    margin-top: auto;
+    margin-right: 0px;
+    margin-bottom: -2px;
+    margin-left: auto;
+    border-color: transparent #7992FF transparent transparent; 
+    transform: translate(107%, 35%); 
+	opacity: 1;
+	transition: transform .4s;
+	transition: opacity .2s;
+    transition-delay: .2s;
+}
+.has-tooltip-active.has-tooltip-left::before{ /*Left Recuadro base */
+    content:'';
+    top: auto;
+    right: -11px;
+    bottom: 50%;
+    left: auto;
+    margin-top: auto;
+	opacity: 0;
+    margin-bottom: auto;
+    transform: translate(0%, 0%); 
+}
+.has-tooltip-active.has-tooltip-left::after{/*Left Flecha base */
+    content:'';
+    top: auto;
+    right: auto;
+    bottom: 50%;
+    left: 0;
+    margin-top: auto;
+    margin-right: 0px;
+    margin-bottom: -2px;
+    margin-left: auto;
+    border-color: transparent transparent transparent #7992FF;
+    transform: translate(-300%, 50%); 
+    opacity: 0;
+}
+.has-tooltip-active.has-tooltip-left:hover::before{/*Left recuadro*/
+	content:attr(data-tooltip);
+    font-family: 'Dongle light';
+	top: auto;
+    right: auto;
+    bottom: calc(50% - 15px);
+    left: -11px;
+    transform: translate(-100%, 0%);
+	opacity: 1;
+	transition: all .3s
+}
+.has-tooltip-active.has-tooltip-left:hover::after{/*Left flecha*/
+	top: auto;
+    right: auto;
+    bottom: 50%;
+    left: auto;
+    margin-top: auto;
+    margin-right: 0px;
+    margin-bottom: -2px;
+    margin-left: auto;
+    border-color: transparent transparent transparent #7992FF;
+    transform:translate(-220%, 35%); 
+	opacity: 1;
+	transition: transform .4s;
+	transition: opacity .2s;
+    transition-delay: .2s;
+}
+.has-tooltip-active.has-tooltip-bottom::before{ /*Bottom Recuadro base */
+	content:'';
+	opacity: 0;
+    transform: translate(-50%, -100%); 
+}
+.has-tooltip-active.has-tooltip-bottom:hover::before{/*Bottom recuadro*/
+	content:attr(data-tooltip);
+    font-family: 'Dongle light';
+	top: auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+    margin-top: auto;
+    margin-bottom: -5px;
+    transform:translate(-50%, 125%);
+	opacity: 1;
+	transition: all .3s
+}
+.has-tooltip-active.has-tooltip-bottom::after{/*Bottom Flecha base */
+    content:'';	
+    top: auto;
+    right: auto;
+    bottom: 0; 
+    left: 50%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    border-color: transparent transparent #7992FF transparent;
+    transform: translate(0%, 202%);
+	opacity: 0; 
+}
+.has-tooltip-active.has-tooltip-bottom:hover::after{/*Bottom flecha*/
+    content:'';	
+	top: auto;
+    right: auto;
+    bottom: 0; 
+    left: 50%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    border-color: transparent transparent #7992FF transparent;
+    transform: translate(0%, 82%);
+	opacity: 1;
+	transition: transform .4s;
+	transition: opacity .2s;
+    transition-delay: .2s;
+}
+.has-tooltip-active.has-tooltip-top::before{ /*Top Recuadro base */
+	content:'';
+	opacity: 0;
+    transform: translate(-50%, -50%); 
+}
+.has-tooltip-active.has-tooltip-top::after{/*Top Flecha base */
+	content:'';
+	top: 10%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    margin-top: -5px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: -5px;
+    border-color: #7992FF transparent transparent transparent;
+    transform: translate(0%, -200%);
+	opacity: 0; 
+}
+.has-tooltip-active.has-tooltip-top:hover::before{ /*Top recuadro*/
+	content:attr(data-tooltip);
+    font-family: 'Dongle light';
+	top:10%;
+	right: auto;
+    bottom: auto;
+    left: 50%;
+    margin-top: -5px;
+    margin-bottom: auto;
+    transform:translate(-50%, -150%);
+	opacity: 1;
+	transition: all .3s
+}
+.has-tooltip-active.has-tooltip-top:hover::after{ /*Top flecha*/
+	content:'';
+	top: 11%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    margin-top: -5px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: -5px;
+    border-color: #7992FF transparent transparent transparent;
+    transform: translate(0%, -134%);
+	opacity: 1;
+	transition: transform .4s;
+	transition: opacity .2s;
+    transition-delay: .2s;
+}

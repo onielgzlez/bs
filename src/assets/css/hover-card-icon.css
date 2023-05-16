@@ -1,0 +1,25 @@
+/*Card con texto cambia de fondo a gris y muestra ícono angle-right al estar en hover*/
+.has-hover-card-icon{
+    padding:0px
+}
+.has-hover-card-icon:hover{
+    background-color: #F0F7FF!important;
+	box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+	transition: box-shadow 0.3s;
+}
+.has-hover-card-icon span:hover::after{
+    width:10px;
+    height: 10px;
+    color:black;
+    content:"\f105";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    position:absolute;
+    right:20px
+}
+.has-hover-card-icon span {
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: left;
+}

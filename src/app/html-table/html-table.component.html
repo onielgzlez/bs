@@ -1,0 +1,33 @@
+<table [ngClass]="tableOptions.class">
+    <tr>
+        <th [ngClass]="column.class" *ngFor="let column of tableOptions.columns">
+            {{ column.label || column.field }}
+        </th>
+    </tr>
+    <tr [ngClass]="data.class" *ngFor="let data of tableOptions.values">
+        <td [ngClass]="column.class" *ngFor="let column of data.values">
+            <a [routerLink]="column.link" [title]="column.value" [ngClass]="column.linkClass"
+                *ngIf="column.type === 'link'">
+                {{ column.value }}
+            </a>
+            <button [ngClass]="column.btnClass" [attr.data-target]="column.btnTarget" *ngIf="column.type ==='btn'">
+                {{ column.value }}
+            </button>
+            <div *ngIf="column.type === 'icon'">
+                <i [ngClass]="column.iconClass"></i> {{ column.value }}
+            </div>
+            <span *ngIf="column.type === 'tooltip'" [ngClass]="column.tipClass" [attr.data-tooltip]="column.value">
+                <i [ngClass]="column.iconClass"></i>
+            </span>
+            <div *ngIf="column.type === 'img'">
+                <figure [ngClass]="column.figClass">
+                    <img [src]="column.imgSrc" [alt]="column.imgAlt" [ngClass]="column.imgClass">
+                </figure>
+                <span>{{ column.value }}</span>
+            </div>
+            <div *ngIf="column.type === 'default'">
+                {{ column.value }}
+            </div>
+        </td>
+    </tr>
+</table>

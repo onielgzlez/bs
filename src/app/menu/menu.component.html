@@ -1,0 +1,8 @@
+<div class="box mr-4 is-hidden-touch">
+    <div class="mb-3" *ngFor="let menu of menuList">
+        <a [attr.data-tooltip]="menu.name" [href]="menu.href"
+            class="has-button-hover has-tooltip-active has-no-decoration is-block has-tooltip-right is-radius  p-4 py-2 is-size-3 has-tooltip-active has-tooltip-right is-relative">
+            <i [ngClass]="menu.icon"></i>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div
+    class="columns is-block-mobile is-flex is-justify-content-space-between is-align-items-center is-bordered-bottom mb-6  pb-3  ">
+    <div class="column">
+        <h1 class="mb-5">Vulnerabilidades</h1>
+    </div>
+    <div class="column">
+        <button
+            class=" is-pulled-right is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center js-modal-trigger"
+            data-target="modal-filtro">
+            <i class="las la-filter is-size-4"></i>
+            <span class="has-no-decoration">Filtros</span>
+        </button>
+        <button
+            class="is-pulled-right is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center mr-3">
+            <i class="las la-file-excel is-size-4"></i>
+            <span class="has-no-decoration">Descargar a Excell</span>
+        </button>
+    </div>
+</div>
+<div class="columns">
+    <div class="column">
+        <app-html-table [class]="bugs.class"
+            [columns]="bugs.columns"
+            [values]="bugs.values"></app-html-table>
+    </div>
+</div>

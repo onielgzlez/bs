@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 964.34 291.03">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Dongle-Light, Dongle;
+        font-size: 22px;
+        font-weight: 300;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #a0a5a8;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .cls-3 {
+        fill: #55a6ff;
+      }
+    </style>
+  </defs>
+  <g id="MENU">
+    <text class="cls-1" transform="translate(0 17.49)"><tspan x="0" y="0">60</tspan></text>
+    <text class="cls-1" transform="translate(0 55.09)"><tspan x="0" y="0">50</tspan></text>
+    <text class="cls-1" transform="translate(0 92.7)"><tspan x="0" y="0">40</tspan></text>
+    <text class="cls-1" transform="translate(0 130.3)"><tspan x="0" y="0">30</tspan></text>
+    <text class="cls-1" transform="translate(0 167.91)"><tspan x="0" y="0">20</tspan></text>
+    <text class="cls-1" transform="translate(1.1 205.51)"><tspan x="0" y="0">10</tspan></text>
+    <text class="cls-1" transform="translate(7.04 243.12)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-1" transform="translate(45.27 280.91)"><tspan x="0" y="0">16</tspan></text>
+    <text class="cls-1" transform="translate(87.24 280.91)"><tspan x="0" y="0">17</tspan></text>
+    <text class="cls-1" transform="translate(129.2 280.91)"><tspan x="0" y="0">18</tspan></text>
+    <text class="cls-1" transform="translate(171.16 280.91)"><tspan x="0" y="0">19</tspan></text>
+    <text class="cls-1" transform="translate(213.12 280.91)"><tspan x="0" y="0">20</tspan></text>
+    <text class="cls-1" transform="translate(255.08 280.91)"><tspan x="0" y="0">21</tspan></text>
+    <text class="cls-1" transform="translate(297.04 280.91)"><tspan x="0" y="0">22</tspan></text>
+    <text class="cls-1" transform="translate(339.01 280.91)"><tspan x="0" y="0">23</tspan></text>
+    <text class="cls-1" transform="translate(380.97 280.91)"><tspan x="0" y="0">24</tspan></text>
+    <text class="cls-1" transform="translate(422.93 280.91)"><tspan x="0" y="0">25</tspan></text>
+    <text class="cls-1" transform="translate(464.89 280.91)"><tspan x="0" y="0">26</tspan></text>
+    <text class="cls-1" transform="translate(506.85 280.91)"><tspan x="0" y="0">27</tspan></text>
+    <text class="cls-1" transform="translate(548.82 280.91)"><tspan x="0" y="0">28</tspan></text>
+    <text class="cls-1" transform="translate(590.78 280.91)"><tspan x="0" y="0">29</tspan></text>
+    <text class="cls-1" transform="translate(632.74 280.91)"><tspan x="0" y="0">30</tspan></text>
+    <text class="cls-1" transform="translate(674.7 280.91)"><tspan x="0" y="0">31</tspan></text>
+    <text class="cls-1" transform="translate(716.66 280.91)"><tspan x="0" y="0">32</tspan></text>
+    <text class="cls-1" transform="translate(758.62 280.91)"><tspan x="0" y="0">33</tspan></text>
+    <text class="cls-1" transform="translate(800.59 280.91)"><tspan x="0" y="0">34</tspan></text>
+    <text class="cls-1" transform="translate(842.55 280.91)"><tspan x="0" y="0">35</tspan></text>
+    <text class="cls-1" transform="translate(884.51 280.91)"><tspan x="0" y="0">36</tspan></text>
+    <text class="cls-1" transform="translate(926.47 280.91)"><tspan x="0" y="0">37</tspan></text>
+    <polyline class="cls-2" points="964.34 256.59 26.58 256.59 26.58 0"/>
+    <polyline class="cls-2" points="54.34 238.31 109.16 158.28 178.67 210.32 278.68 101.45 353.22 163.1 501.42 36.88"/>
+    <circle class="cls-3" cx="54.34" cy="238.31" r="4.81"/>
+    <circle class="cls-3" cx="109.16" cy="158.28" r="4.81"/>
+    <circle class="cls-3" cx="178.67" cy="210.32" r="4.81"/>
+    <circle class="cls-3" cx="278.68" cy="101.45" r="4.81"/>
+    <circle class="cls-3" cx="353.22" cy="163.1" r="4.81"/>
+    <circle class="cls-3" cx="501.42" cy="36.88" r="4.81"/>
+    <circle class="cls-3" cx="556.32" cy="96.63" r="4.81"/>
+    <circle class="cls-3" cx="679.51" cy="32.07" r="4.81"/>
+    <circle class="cls-3" cx="746.87" cy="163.1" r="4.81"/>
+    <circle class="cls-3" cx="847.36" cy="111.07" r="4.81"/>
+    <polyline class="cls-2" points="501.42 36.88 556.32 96.63 679.51 32.07 746.87 163.1 847.36 111.07"/>
+  </g>
+</svg>

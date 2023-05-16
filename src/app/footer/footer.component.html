@@ -1,0 +1,878 @@
+<!-- Modal Cambiar Contraseña -->
+<div id="contrasena" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="modal-card is-radius">
+            <section class="modal-card-body p-5">
+                <div class="is-flex is-flex-wrap-wrap is-align-content-center mb-5">
+                    <i
+                        class="las la-lock mr-2 is-size-4 is-flex-wrap-wrap is-justify-content-center is-align-content-center has-text-light image is-48x48 has-background-info is-flex is-rounded mb-4"></i>
+                    <h3 class="modal-card-title mb-5 has-text-right has-text-left-mobile">Cambia tu contraseña</h3>
+                </div>
+                <form action="#" class="form-cha mb-4">
+                    <div class="field">
+                        <label class="label mb-1">Digite su contraseña actual</label>
+                        <input class="input mb-2 is-radius" type="text" required />
+                    </div>
+                    <div class="field">
+                        <label class="label mb-1">Digite su nueva contraseña</label>
+                        <input class="input mb-2  is-radius" type="text" required />
+                    </div>
+                    <div class="field">
+                        <label class="label mb-1">Confirmar su nueva contraseña</label>
+                        <input class="input is-radius" type="text" required />
+                    </div>
+                </form>
+
+                <ul class="is-size-8">
+                    <li class="is-flex is-align-items-top">
+                        <i class="las la-times has-text-danger is-size-7 mr-2"></i> La contraseña actual es incorrecta.
+                    </li>
+                    <li class="is-flex is-align-items-top">
+                        <i class="las la-times has-text-danger is-size-7 mr-2"></i> Los campos nueva contraseña y
+                        confirmar contraseña no coinciden.
+                    </li>
+                    <li class="is-flex is-align-items-top">
+                        <i class="las la-check has-text-success is-size-7 mr-2"></i> Debe contener al menos 2
+                        mayúscula(s), 2 minúscula(s), y 2 carácteres especiales.
+                    </li>
+                    <li class="is-flex is-align-items-top">
+                        <i class="las la-check has-text-success is-size-7 mr-2"></i> Poseer largo mínimo 8 caracteres,
+                        largo máximo 15 caracteres.
+                    </li>
+                    <li class="is-flex is-align-items-top">
+                        <i class="las la-times has-text-danger is-size-7 mr-2"></i> No puede ser igual a alguna de sus
+                        últimas 6 contraseñas.
+                    </li>
+                    <li class="is-flex is-align-items-top">
+                        <i class="las la-times has-text-danger is-size-7 mr-2"></i> No puede ser igual a su login de
+                        usuario.
+                    </li>
+                    <li class="is-flex is-align-items-top">
+                        Nota: Se consideran caracteres especiales los siguiente: !#$%&()+,-./:;@
+                    </li>
+                </ul>
+            </section>
+            <footer class="modal-card-foot"><button class="button is-primary is-radius">Guardar</button> <button
+                    class="button is-default is-radius">Cancelar</button></footer>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<!-- Eliminar Usuario -->
+<div id="eliminar-usuario" class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="modal-card  is-radius">
+            <section class="modal-card-body p-5">
+                <div class="is-flex  is-flex-wrap-wrap is-align-content-center is-block-mobile mb-5 is-block-mobile">
+                    <i
+                        class="las la-trash-alt mr-2 is-size-4 is-flex-wrap-wrap is-justify-content-center is-align-content-center has-text-light image is-48x48 has-background-danger is-flex is-rounded mb-4"></i>
+                    <h3 class="modal-card-title mb-5 has-text-right has-text-left-mobile">Eliminar Usuario</h3>
+                </div>
+                <br>
+                <form action="#" class="form-cha">
+                    <div class="field">
+                        <label class="label">¿Esta seguro de que quiere eliminar al usuario?</label>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-danger is-radius">Eliminar</button>
+                <button class="button is-default is-radius">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<!-- Eliminar Servidor -->
+<div id="eliminar-servidor" class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="modal-card  is-radius">
+            <section class="modal-card-body p-5">
+                <div class="is-flex  is-flex-wrap-wrap is-align-content-center is-block-mobile mb-5 ">
+                    <i
+                        class="las la-trash-alt mr-2 is-size-4 is-flex-wrap-wrap is-justify-content-center is-align-content-center has-text-light image is-48x48 has-background-danger is-flex is-rounded mb-4"></i>
+                    <h3 class="modal-card-title mb-5 has-text-right has-text-left-mobile">Eliminar Servidor</h3>
+                </div>
+                <br>
+                <form action="#" class="form-cha">
+                    <div class="field">
+                        <label class="label">¿Esta seguro de que quiere eliminar el servidor?</label>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-danger is-radius">Eliminar</button>
+                <button class="button is-default is-radius">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<!-- Eliminar Categoría -->
+<div id="eliminar-categoria" class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="modal-card  is-radius">
+            <section class="modal-card-body p-5">
+                <div class="is-flex  is-flex-wrap-wrap is-align-content-center is-block-mobile mb-5 ">
+                    <i
+                        class="las la-trash-alt mr-2 is-size-4 is-flex-wrap-wrap is-justify-content-center is-align-content-center has-text-light image is-48x48 has-background-danger is-flex is-rounded"></i>
+                    <h3 class="modal-card-title mb-5 has-text-right">Eliminar Categoría</h3>
+                </div>
+                <br>
+                <form action="#" class="form-cha">
+                    <div class="field">
+                        <label class="label">¿Esta seguro de que quiere eliminar la categoría?</label>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-danger is-radius">Eliminar</button>
+                <button class="button is-default is-radius">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<!-- Menu movil -->
+<div id="menu-movil" class="modal is-full-screen">
+    <div class="modal-background"></div>
+    <div class="modal-content has-100h">
+        <div class="modal-card p-0 m-0 has-100h">
+            <section class="modal-card-body p-5">
+                <h3 class="modal-card-title mb-5">Menú principal</h3>
+
+                <br>
+                <ul>
+                    <li>
+                        <a [routerLink]="'/'"
+                            class="has-no-decoration has-text-left is-size-5 is-flex is-align-items-center mb-4"> <i
+                                class=" mr-3 las la-chart-pie"></i> <span> Inicio</span></a>
+                    </li>
+                    <li>
+                        <a [routerLink]="'/proyectos'"
+                            class="has-no-decoration has-text-left is-size-5 is-flex is-align-items-center mb-4"> <i
+                                class=" mr-3 las la-briefcase"></i> <span> Proyectos</span></a>
+                    </li>
+                    <li>
+                        <a [routerLink]="'/servidores'"
+                            class="has-no-decoration has-text-left is-size-5 is-flex is-align-items-center mb-4"> <i
+                                class=" mr-3 las la-server"></i> <span> Host/IP</span></a>
+                    </li>
+                    <li>
+                        <a [routerLink]="'/categorias'"
+                            class="has-no-decoration has-text-left is-size-5 is-flex is-align-items-center mb-4"> <i
+                                class=" mr-3 las la-tag"></i> <span> Categorías</span></a>
+                    </li>
+                    <li>
+                        <a [routerLink]="'/asignaciones'"
+                            class="has-no-decoration has-text-left is-size-5 is-flex is-align-items-center mb-4"> <i
+                                class=" mr-3 las la-tasks"></i> <span>Asignaciones</span></a>
+                    </li>
+                    <li>
+                        <a [routerLink]="'/vulnerabilidades'"
+                            class="has-no-decoration has-text-left is-size-5 is-flex is-align-items-center mb-4"> <i
+                                class=" mr-3 las la-bug"></i> <span> Vulnerabilidades</span></a>
+                    </li>
+                    <li>
+                        <a [routerLink]="'/equipo'"
+                            class="has-no-decoration has-text-left is-size-5 is-flex is-align-items-center mb-4"><i
+                                class=" mr-3 las la-user-friends"></i> <span> Equipo</span></a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<!-- Modal Detalle tarea -->
+<div id="detalle_tarea" class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content  mt-5 mb-5">
+        <div class="modal-card  is-radius">
+            <section class="modal-card-body p-5">
+                <div class="mb-4">
+                    <h3 class="modal-card-title">Oracle Solaris critical patch update - oct2020_SCRUTI_3_33_26_0</h3>
+                </div>
+                <div>
+                    <table class="is-fullwidth is-table-features">
+                        <tr>
+                            <td colspan="2">
+                                <div class="is-flex is-align-items-center is-block-mobile">
+                                    <h4 class="mr-3"><strong>Asignado a:</strong>
+                                    </h4>
+                                    <div class="dropdown">
+                                        <div class="dropdown-trigger">
+                                            <button
+                                                class="has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center pt-0"
+                                                aria-haspopup="true" aria-controls="panel-user">
+                                                <figure class="image is-24x24 is-inline-flex mr-3 ">
+                                                    <img src="assets/images/usuario2.jpg" alt="" class="is-rounded">
+                                                </figure>
+                                                <span class="has-no-decoration">Pedro Soto</span>
+                                                <span class="icon is-small ml-1 dropdown-icon">
+                                                    <i class="las la-angle-down mt-2" haria-hidden="true"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="dropdown-menu" id="panel-user" role="menu">
+                                            <div class="dropdown-content p-2">
+                                                <ul>
+                                                    <li>
+                                                        <div
+                                                            class="is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center">
+
+                                                            <figure class="image is-32x32 is-inline-flex mr-3 ">
+                                                                <img src="assets/images/usuario2.jpg" alt=""
+                                                                    class="is-rounded">
+                                                            </figure>
+                                                            <span class="has-no-decoration has-text-left">Pedro
+                                                                Soto</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center">
+
+                                                            <figure class="image is-32x32 is-inline-flex mr-3 ">
+                                                                <img src="assets/images/usuario1.jpg" alt=""
+                                                                    class="is-rounded">
+                                                            </figure>
+                                                            <span class="has-no-decoration has-text-left">Constanza
+                                                                Flores</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center">
+
+                                                            <figure class="image is-32x32 is-inline-flex mr-3 ">
+                                                                <img src="assets/images/usuario3.jpg" alt=""
+                                                                    class="is-rounded">
+                                                            </figure>
+                                                            <span class="has-no-decoration has-text-left">Pía Rivera
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="is-flex is-align-items-center is-block-mobile">
+                                    <h4 class="is-inline-block">Proyecto: </h4>
+                                    <div class="is-fullwidth">
+                                        <span>CopcopCo</span>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="is-flex is-align-items-center is-block-mobile">
+                                    <h4 class="is-inline-block">Servicio: </h4>
+                                    <div class="is-fullwidth">
+                                        <span>Hacking Ético</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="is-flex is-align-items-center is-block-mobile">
+                                    <h4 class="mr-3 mb-2"><strong>Score:</strong></h4>
+                                    <div class="is-fullwidth">
+                                        <span class="tag mb-2 has-background-danger has-text-white"> <i
+                                                class="las la-bug mr-1"> </i>10.0 Crítico</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h4 class="mr-3 mb-2"><strong>Infraestructura:</strong></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="is-flex is-align-items-center is-block-mobile">
+                                    <h4 class="mr-3 mb-2"><strong>Host:</strong></h4>
+                                    <div class="is-fullwidth">
+                                        <span class="tag mb-2">20.102.04</span>
+                                        <span class="tag mb-2">portal.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="is-flex is-align-items-center is-block-mobile">
+                                    <h4 class="mr-3 mb-2"><strong>Categorias:</strong></h4>
+                                    <div class="is-fullwidth">
+                                        <span class="tag mb-2 ">Firewall</span>
+                                        <span class="tag mb-2 ">Nuevo</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="columns  mb-0">
+                    <div class="column">
+                        <div class="is-flex is-align-items-center is-block-mobile">
+                            <h4 class="mr-3 mb-2"><strong>Estado:</strong></h4>
+                            <div class="dropdown">
+                                <div class="dropdown-trigger">
+                                    <button
+                                        class="has-background-transparent is-borderless has-no-decoration is-clickable"
+                                        aria-haspopup="true" aria-controls="panel-user">
+
+                                        <span class="tag has-background-status-dev mb-2 ">En desarrollo</span>
+                                        <span class="icon is-small ml-1 dropdown-icon">
+                                            <i class="las la-angle-down mt-2" haria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu" id="panel-user" role="menu">
+                                    <div class="dropdown-content p-2">
+                                        <ul>
+                                            <li>
+                                                <span
+                                                    class="tag is-clickable is-small has-background-status-det mb-2 ">Detectada</span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="tag is-clickable is-small has-background-status-start mb-2 ">Asignada</span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="tag is-clickable is-small has-background-status-dev mb-2 ">En
+                                                    desarrollo</span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="tag is-clickable is-small has-background-status-ok mb-2 ">Resuelta</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h4>Descripción:</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem exercitationem hic est eos fugiat
+                        obcaecati.</p>
+
+                </div>
+                <div class="mb-5">
+                    <h4>Descripción detalle:</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, rerum. Adipisci blanditiis
+                        optio similique cumque cum, minus aut non quis magnam, vero assumenda sit laboriosam iure, illum
+                        laborum beatae numquam?</p>
+                </div>
+                <div class="mb-5">
+                    <h4>Recomendación:</h4>
+                    <p> Adipisci blanditiis optio similique cumque cum, minus aut non quis magnam, vero assumenda sit
+                        laboriosam iure, illum laborum beatae minus aut non quis magnam, vero assumend.</p>
+                </div>
+                <div class="mb-5">
+                    <h4 class="mb-2"> <strong>Host(s)/IP(s) afectados</strong></h4>
+                    <table class="is-bordered card px-3 is-fullwidth table">
+                        <thead>
+                            <tr>
+                                <th>Host</th>
+                                <th>Versión instalada</th>
+                                <th>Versión disponible</th>
+                                <th>Usuarios</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10.50.14.13</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10.50.14.20</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10.50.14.7</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10.50.19.83</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10.50.20.37</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mb-5">
+                    <h4 class="mb-2">Datos adjuntos</h4>
+                    <label class="button  is-radius  is-default mb-3 is-small" for="upload_file">Seleccionar
+                        archivo</label>
+                    <input id="upload_file" type="file" class="is-hidden">
+                    <p class="mb-2"><i class="las la-paperclip "></i> Archivos adjuntos</p>
+                    <ul class="is-flex is-block-mobile">
+                        <li>
+                            <div class="tag has-background-red mb-2 mr-2 py-4">Screenshoot.jpg <button
+                                    class="is-clickable has-background-transparent is-borderless has-button-hover-sm ml-3"><i
+                                        class="las la-times"></i> </button></div>
+                        </li>
+                        <li>
+                            <div class="tag has-background-red mb-2 mr-2 py-4">Scan.doc <button
+                                    class="is-clickable has-background-transparent is-borderless has-button-hover-sm ml-3"><i
+                                        class="las la-times"></i> </button></div>
+                        </li>
+                        <li>
+                            <div class="tag has-background-red mb-2 mr-2 py-4">key.bin <button
+                                    class="is-clickable has-background-transparent is-borderless has-button-hover-sm ml-3"><i
+                                        class="las la-times"></i> </button></div>
+                        </li>
+                        <li>
+                            <div class="tag has-background-red mb-2 mr-2 py-4">reset.log <button
+                                    class="is-clickable has-background-transparent is-borderless has-button-hover-sm ml-3"><i
+                                        class="las la-times"></i> </button></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-5">
+                    <h4 class="mb-2"><strong>Comentarios</strong></h4>
+                    <div class="has-text-right mb-4">
+                        <textarea class="is-fullwidth is-radius is-bordered p-2 is-height-100" name="" id="" cols="30"
+                            rows="10" placeholder="Escribe aquí tu mensaje"></textarea>
+                        <button class="button is-default is-radius has-text-right is-small">Agregar comentario</button>
+                    </div>
+                    <div class="mb-4 p-3 has-background-gray is-radius">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <div class="is-flex is-align-items-center mb-2">
+                                <figure class="image is-24x24 is-inline-flex mr-3 ">
+                                    <img src="assets/images/usuario2.jpg" alt="" class="is-rounded">
+                                </figure>
+                                <span class="has-no-decoration"><strong>Pedro Soto</strong> </span>
+                            </div>
+                            <div>
+                                <span>25 de mayo de 2022 10:34</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore, praesentium soluta,
+                            deleniti cumque, cupiditate ipsum nemo hic fuga repellat accusamus eligendi autem magni
+                            perspiciatis dolore. Inventore reiciendis error quam!</p>
+                    </div>
+                    <div class="mb-4 p-3 has-background-gray is-radius">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <div class="is-flex is-align-items-center mb-2">
+                                <figure class="image is-24x24 is-inline-flex mr-3 ">
+                                    <img src="assets/images/usuario1.jpg" alt="" class="is-rounded">
+                                </figure>
+                                <span class="has-no-decoration"><strong>Constanza Flores</strong> </span>
+                            </div>
+                            <div>
+                                <span>24 de mayo de 2022 10:34</span>
+                            </div>
+                        </div>
+                        <p>Raesentium soluta, deleniti cumque, cupiditate ipsum nemo hic fuga repellat accusamus
+                            eligendi autem magni perspiciatis dolore. </p>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="field is-fullwidth">
+                            <label for="estado_modal" class="label mb-1">
+                                <h4>Fecha de inicio</h4>
+                            </label>
+                            <input type="date" class="input is-radius">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field is-fullwidth">
+                            <label for="estado_modal" class="label mb-1">
+                                <h4>Fecha de término</h4>
+                            </label>
+                            <input type="date" class="input is-radius">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-primary is-radius">Asignar</button>
+                <button class="button is-default is-radius">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<!-- Filtro -->
+<div id="modal-filtro" class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content  mt-5">
+        <div class="modal-card  is-radius">
+            <section class="modal-card-body p-5">
+                <div class="is-flex  is-flex-wrap-wrap is-align-content-center is-block-mobile mb-5 ">
+                    <i
+                        class="las la-filter mr-2 is-size-4 is-flex-wrap-wrap is-justify-content-center is-align-content-center has-text-light image is-48x48 has-background-info is-flex is-rounded"></i>
+                    <h3 class="modal-card-title mb-5 has-text-right has-text-left-mobile">Filtrar</h3>
+                </div>
+                <br>
+                <form action="#" class="form-cha">
+                    <div class="field mb-5">
+                        <label for="id-proyect">
+                            <h4 class="mb-1"> ID de proyecto</h4>
+                        </label>
+                        <input id="id-proyect" type="text" class="input is-radius is-fullwidth">
+                    </div>
+                    <div class="field mb-5  is-fullwidth">
+                        <label for="proyect">
+                            <h4 class="mb-1"> Proyecto</h4>
+                        </label>
+                        <select id="proyect" type="text" class="select is-radius is-fullwidth">
+                            <option value="" class="disabled">Selecciona un proyecto</option>
+                            <option value="">Apache 2.4.x < 2.4.47 Multiple Vulnerabilities</option>
+                            <option value="">Apache 2.4x < 2.4.52 Multiple Vulnerabilities</option>
+                            <option value="">Cifrado SSL de Median Fortaleza (SWEET32)</option>
+                            <option value="">Python Unsupported Version Detection</option>
+                            <option value="">Oracle Solaris critical patch update - oct2020_SCRUTI_3_33_26_0</option>
+                            <option value="">Oracle Solaris critical patch update - oct2020_SCRUTI_4_24_75_2</option>
+                            <option value="">Oracle Solaris critical patch update - oct2020_SCRUTI_2_42_18_4</option>
+                        </select>
+                    </div>
+
+                    <div class="field mb-5">
+                        <label for="title-vuln">
+                            <h4 class="mb-1"> Título de vulnerabilidad</h4>
+                        </label>
+                        <input id="title-vuln" type="text" class="input is-radius is-fullwidth">
+                    </div>
+                    <div class="field mb-4">
+                        <label for="type-proyect">
+                            <h4 class="mb-1"> Tipo de proyecto</h4>
+                        </label>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Evaluación</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Soporte Licencias</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Actualización firewall</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Conexión Redes</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field mb-4">
+                        <h4 class="mb-1">Asignado a:</h4>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <figure class="image is-32x32 is-inline-flex mr-3 ">
+                                        <img src="assets/images/usuario2.jpg" alt="" class="is-rounded">
+                                    </figure>
+                                    <span class="has-no-decoration has-text-left">Pedro soto</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <figure class="image is-32x32 is-inline-flex mr-3 ">
+                                        <img src="assets/images/usuario1.jpg" alt="" class="is-rounded">
+                                    </figure>
+                                    <span class="has-no-decoration has-text-left">Constanza Flores</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <figure class="image is-32x32 is-inline-flex mr-3 ">
+                                        <img src="assets/images/usuario3.jpg" alt="" class="is-rounded">
+                                    </figure>
+                                    <span class="has-no-decoration has-text-left">Pía Rivera </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field mb-4">
+                        <label for="type-proyect">
+                            <h4 class="mb-1"> Tipo de servicio</h4>
+                        </label>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Hacking Ético</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Firewall</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Escaneo de base de datos</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Limpieza de malware</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field">
+                        <h4 class="mb-3">Tipo de vulnerabilidad:</h4>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left"> Redes</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left"> Infraestructura</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left"> Base de datos</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field">
+                        <h4 class="mb-3">Criticidad:</h4>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left"> <i
+                                            class="las la-bug has-text-danger"></i> Crítico</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left"> <i
+                                            class="las la-bug has-text-warning"></i> Medio</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left"> <i
+                                            class="las la-bug has-text-info"></i> Bajo</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field">
+                        <h4 class="mb-3">Estado de vulnerabilidad:</h4>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Detectada</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Asignada a</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">En desarrollo</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Resuelta</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field">
+                        <h4 class="mb-3">Host/IP:</h4>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">10.346.257.15</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">10.3658.357.56</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">10.346.457.32</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-primary is-radius">Aplicar</button>
+                <button class="button is-default is-radius">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+
+</div>
+<!-- Asignar a -->
+<div id="modal-asignacion" class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="modal-card  is-radius">
+            <section class="modal-card-body p-5">
+                <div class="is-flex  is-flex-wrap-wrap is-align-content-center is-block-mobile mb-5 ">
+                    <i
+                        class="las la-tasks mr-2 is-size-4 is-flex-wrap-wrap is-justify-content-center is-align-content-center has-text-light image is-48x48 has-background-info is-flex is-rounded"></i>
+                    <h2 class="modal-card-title mb-5 has-text-right">Asignar</h2>
+                </div>
+                <br>
+                <form action="#" class="form-cha">
+                    <div class="field mb-4">
+                        <h3 class="mb-3">Asignar a:</h3>
+                        <ul>
+                            <li>
+                                <button
+                                    class="is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <figure class="image is-32x32 is-inline-flex mr-3 ">
+                                        <img src="assets/images/usuario2.jpg" alt="" class="is-rounded">
+                                    </figure>
+                                    <span class="has-no-decoration has-text-left">Pedro soto</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    class="is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <figure class="image is-32x32 is-inline-flex mr-3 ">
+                                        <img src="assets/images/usuario1.jpg" alt="" class="is-rounded">
+                                    </figure>
+                                    <span class="has-no-decoration has-text-left">Constanza Flores</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    class="is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <figure class="image is-32x32 is-inline-flex mr-3 ">
+                                        <img src="assets/images/usuario3.jpg" alt="" class="is-rounded">
+                                    </figure>
+                                    <span class="has-no-decoration has-text-left">Pía Rivera </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-primary is-radius">Aplicar</button>
+                <button class="button is-default is-radius">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<!-- Solicitar reevaluación -->
+<div id="modal-reevaluacion" class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="modal-card  is-radius">
+            <section class="modal-card-body p-5">
+                <div class="is-flex  is-flex-wrap-wrap is-align-content-center is-block-mobile mb-5 ">
+                    <i
+                        class="las la-clipboard-check mr-2 is-size-4 is-flex-wrap-wrap is-justify-content-center is-align-content-center has-text-light image is-48x48 has-background-primary is-flex is-rounded"></i>
+                    <h3 class="modal-card-title mb-5 has-text-right">Solicitar reevaluación</h3>
+                </div>
+                <br>
+                <p class="mb-2">Al solicitar una reevaluación de su proyecto, este quedará en estado cerrado. Dando
+                    espacio a un nuevo proyecto. </p>
+                <p>¿Acepta cerrar el proyecto y solicitar una reevaluación?
+                </p>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-primary is-radius">Aceptar</button>
+                <button class="button is-default is-radius">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>

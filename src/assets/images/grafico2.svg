@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285.56 173.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Dongle-Light, Dongle;
+        font-size: 27.24px;
+        font-weight: 300;
+      }
+
+      .cls-2 {
+        fill: #ffae2e;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #d2eaff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #b4c1cc;
+      }
+
+      .cls-5 {
+        fill: #737e84;
+      }
+
+      .cls-6 {
+        fill: #55a6ff;
+      }
+
+      .cls-7 {
+        fill: #00d07f;
+      }
+
+      .cls-8 {
+        fill: #f75454;
+      }
+
+      .cls-9 {
+        fill: #ff8500;
+      }
+    </style>
+  </defs>
+  <g id="MENU">
+    <g>
+      <path class="cls-3" d="m13.56,142.78C13.56,71.41,71.41,13.56,142.78,13.56s129.22,57.85,129.22,129.22"/>
+      <text/>
+      <circle class="cls-2" cx="142.78" cy="13.56" r="13.56"/>
+      <circle class="cls-7" cx="49.18" cy="53.45" r="13.56"/>
+      <circle class="cls-6" cx="13.56" cy="140.39" r="13.56"/>
+      <circle class="cls-8" cx="272" cy="140.39" r="13.56"/>
+      <text class="cls-1" transform="translate(138.42 19.32)"><tspan x="0" y="0">6</tspan></text>
+      <text class="cls-1" transform="translate(8.58 146.26)"><tspan x="0" y="0">2</tspan></text>
+      <text class="cls-1" transform="translate(263.59 146.26)"><tspan x="0" y="0">10</tspan></text>
+      <text class="cls-1" transform="translate(43.3 58.36)"><tspan x="0" y="0">4</tspan></text>
+      <circle class="cls-9" cx="236.58" cy="53.45" r="13.56"/>
+      <text class="cls-1" transform="translate(232.88 58.36)"><tspan x="0" y="0">8</tspan></text>
+    </g>
+    <path class="cls-4" d="m118.36,163.5h0c.11,5.89,5.23,10.44,11.1,9.83h0c4.5-.47,8.58-2.85,11.2-6.54l62.06-87.37-79.22,72.17c-3.34,3.05-5.21,7.39-5.13,11.91Z"/>
+    <circle class="cls-5" cx="129.49" cy="161.79" r="5.18"/>
+  </g>
+</svg>

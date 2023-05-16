@@ -1,0 +1,47 @@
+<section class="is-flex is-justify-content-space-between p-3 is-bordered-bottom is-align-items-center">
+    <a [routerLink]="'/inicio'" class="is-block img-logo">
+        <img class="img-logo" src="assets/images/logo.png" alt="">
+    </a>
+    <div class="is-flex is-align-items-center">
+        <div class="dropdown is-right" [ngClass]="active">
+            <div class="dropdown-trigger">
+                <button (click)="toogleActive(isOpen)"
+                    class="is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center"
+                    aria-haspopup="true" aria-controls="panel-user">
+                    <figure class="image is-32x32 is-inline-flex mr-3 ">
+                        <img src="assets/images/usuario1.jpg" alt="" class="is-rounded">
+                    </figure>
+                    <span class="has-no-decoration is-hidden-touch">Constanza</span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="panel-user" role="menu">
+                <div class="dropdown-content p-4">
+                    <strong class="mb-3">Hola Constanza</strong>
+                    <div class="mb-4">
+                        constanza@barnard.cl
+                    </div>
+                    <div class=" is-bordered-bottom mt-0 mb-2"></div>
+                    <a [routerLink]="'/facturacion'" (click)="toogleActive(true)"
+                        class="button is-borderless has-no-decoration has-text-primary has-button-hover">
+                        Facturación
+                    </a>
+                    <button (click)="toogleActive(true)"
+                        class="button is-borderless has-no-decoration has-text-primary has-button-hover js-modal-trigger"
+                        data-target="contrasena">
+                        Cambiar contraseña
+                    </button>
+                    <a [routerLink]="'/login'" (click)="toogleActive(true)"
+                        class="button is-borderless has-no-decoration has-text-primary has-button-hover">
+                        Cerrar sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class=" is-hidden-desktop">
+            <button class="is-block p-2 has-shadow has-background-white is-radius is-borderless js-modal-trigger"
+                data-target="menu-movil">
+                <i class="las la-bars is-size-6"></i>
+            </button>
+        </div>
+    </div>
+</section>

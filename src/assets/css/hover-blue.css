@@ -1,0 +1,13 @@
+/*Botón navegación se vuelve azul al estar en hover*/
+button.has-hover-blue:hover,
+a.has-hover-blue:hover{
+	background-color: #0f69c4!important;
+	transition: background 0.3s;
+	color:#fff;
+}
+a.has-hover-blue:hover i{
+	color:#fff;
+}
+a.has-text-primary.has-hover-blue:hover{	
+	color:#fff!important;
+}

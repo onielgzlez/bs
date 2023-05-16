@@ -1,0 +1,8 @@
+/*En botones donde la imagen lleva el efecto, se produce sombra en ella al estar en hover*/
+.has-button-figure img{
+	box-shadow: transparent;
+}
+.has-button-figure:hover img{
+	box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+	transition: box-shadow 0.3s;
+}

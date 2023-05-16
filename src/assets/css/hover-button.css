@@ -1,0 +1,29 @@
+/*botones de aspecto de texto obtienen marco sombreado de botón al estar hover*/
+.has-button-hover{
+    padding: 0.75rem!important;
+    cursor: pointer;
+}
+.has-button-hover:hover{
+    background-color: #F0F7FF!important;
+    border-radius: 7px;
+}
+.has-button-hover-sm{
+	padding:0.3rem!important;
+    cursor: pointer;
+}
+.has-button-hover-sm:hover {
+    background-color: #F0F7FF!important;
+    border-radius: 7px;
+}
+.has-button-hover.is-active,
+.has-button-hover-white.is-active{
+    background-color: #d5dcfc!important;
+    border-radius: 7px;
+}
+.has-button-hover-white{
+    padding: 0.75rem!important;
+}
+.has-button-hover-white:hover{
+    background-color: #fff!important;
+    border-radius: 7px;
+}
