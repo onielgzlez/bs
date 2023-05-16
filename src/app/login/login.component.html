@@ -1,1 +1,37 @@
-<p>login works!</p>
+<div class="columns is-fullheight">
+    <div class="column is-two-thirds">
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column is-two-thirds is-pulled-right pt-6 has-form-max-width is-full-mobile">
+                <div class="pt-5 is-fullwidth ">
+                    <img class="img-logo mb-6" src="assets/images/logo.png" alt="">
+                    <div class="is-flex is-justify-content-space-between is-align-items-center mb-3 mb-5">
+                        <h1>
+                            Inicio de sesión
+                        </h1>
+                    </div>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="nombres-usuario" class=" is-block">
+                        Nombre de usuario
+                    </label>
+                    <input id="nombres-usuario" type="text" class="input is-radius">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="correo" class=" is-block">
+                        Contraseña
+                    </label>
+                    <input id="correo" type="text" class="input is-radius">
+                </div>
+                <div class="is-flex-desktop is-align-items-center is-justify-content-space-between mt-6">
+                    <a [routerLink]="'/password-recuperar'" class="link is-block is-hidden-touch mb-5">Recuperar
+                        contraseña</a>
+                    <a [routerLink]="'/login-onboarding'"
+                        class="has-text-white button is-primary is-radius is-right mb-5">Ingresar</a>
+                    <a [routerLink]="'/password-recuperar'" class="link is-block is-hidden-desktop">Recuperar
+                        contraseña</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

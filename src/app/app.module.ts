@@ -18,12 +18,13 @@ import { AssignmentComponent } from './assignment/assignment.component';
 import { HtmlTableComponent } from './html-table/html-table.component';
 import { MenuComponent } from './menu/menu.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { PasswordComponent } from './login/password.component';
 import { CustomChartComponent } from './chart/chart.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { PaymentComponent } from './payment/payment.component';
+import { LoginBoardComponent } from './login/login-board.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PaymentComponent } from './payment/payment.component';
     HtmlTableComponent,
     MenuComponent,
     LoginComponent,
-    RegisterComponent,
+    LoginBoardComponent,
+    PasswordComponent,
     CustomChartComponent,
     HeaderComponent,
     FooterComponent,

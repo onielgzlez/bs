@@ -9,7 +9,11 @@ import { ProjectComponent } from './project/project.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { PaymentComponent } from './payment/payment.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { LoginBoardComponent } from './login/login-board.component';
+import { PasswordComponent } from './login/password.component';
+import { PasswordSentComponent } from './login/password.component';
+import { PasswordNewComponent } from './login/password.component';
+import { PasswordSuccessComponent } from './login/password.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -22,7 +26,12 @@ const routes: Routes = [
   { path: 'asignaciones', component: AssignmentComponent },
   { path: 'facturacion', component: PaymentComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  { path: 'login-onboarding', component: LoginBoardComponent },
+  { path: 'password-recuperar', component: PasswordComponent },
+  { path: 'password-enviado', component: PasswordSentComponent },
+  { path: 'password-nuevo', component: PasswordNewComponent },
+  { path: 'password-exito', component: PasswordSuccessComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
