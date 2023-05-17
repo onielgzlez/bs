@@ -2,23 +2,44 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NgApexchartsModule } from 'ng-apexcharts'
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 import { AppComponent } from './app.component';
-import { DashComponent } from './dash/dash.component';
+import {
+  DashComponent,
+  DashEmptyComponent,
+  DashNotRiskComponent,
+} from './dash/dash.component';
 import { UserComponent } from './user/user.component';
-import { ProfileComponent } from './profile/profile.component';
 import { TeamComponent } from './team/team.component';
 import { BugComponent } from './bug/bug.component';
-import { VulnerabilityComponent } from './vulnerability/vulnerability.component';
-import { ProjectComponent } from './project/project.component';
+import {
+  ProjectComponent,
+  ProjectDetailComponent,
+} from './project/project.component';
+import { BoardComponent, ListComponent } from './project/board.component';
 import { CategoryComponent } from './category/category.component';
 import { ServerComponent } from './server/server.component';
 import { AssignmentComponent } from './assignment/assignment.component';
-import { HtmlTableComponent } from './html-table/html-table.component';
+import {
+  HtmlTableComponent,
+  HtmlLinksComponent,
+  HtmlDefaultComponent,
+  HtmlIconComponent,
+  HtmlImgComponent,
+} from './html-table/html-table.component';
 import { MenuComponent } from './menu/menu.component';
-import { LoginComponent } from './login/login.component';
-import { PasswordComponent } from './login/password.component';
+import {
+  LoginComponent,
+  LoginDemoComponent,
+  LoginResumeComponent,
+} from './login/login.component';
+import {
+  PasswordComponent,
+  PasswordNewComponent,
+  PasswordSentComponent,
+  PasswordSuccessComponent,
+} from './login/password.component';
 import { CustomChartComponent } from './chart/chart.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -30,33 +51,45 @@ import { LoginBoardComponent } from './login/login-board.component';
   declarations: [
     AppComponent,
     DashComponent,
+    DashEmptyComponent,
+    DashNotRiskComponent,
     UserComponent,
-    ProfileComponent,
     TeamComponent,
     BugComponent,
-    VulnerabilityComponent,
     ProjectComponent,
+    ProjectDetailComponent,
+    BoardComponent,
+    ListComponent,
     CategoryComponent,
     ServerComponent,
     AssignmentComponent,
     HtmlTableComponent,
+    HtmlLinksComponent,
+    HtmlDefaultComponent,
+    HtmlIconComponent,
+    HtmlImgComponent,
     MenuComponent,
     LoginComponent,
     LoginBoardComponent,
+    LoginDemoComponent,
+    LoginResumeComponent,
     PasswordComponent,
+    PasswordNewComponent,
+    PasswordSentComponent,
+    PasswordSuccessComponent,
     CustomChartComponent,
     HeaderComponent,
     FooterComponent,
-    PaymentComponent
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,
     CommonModule,
     FormsModule,
     AppRoutingModule,
-    NgApexchartsModule
+    NgApexchartsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

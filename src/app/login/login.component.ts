@@ -13,3 +13,27 @@ export class LoginComponent implements OnInit {
     this.myService.loginPageRendered.next(true)
   }
 }
+
+@Component({
+  selector: 'app-login-demo',
+  templateUrl: './login-demo.component.html',
+})
+export class LoginDemoComponent implements OnInit {
+  constructor(private myService: AppService) {}
+
+  ngOnInit(): void {
+    this.myService.loginPageRendered.next(true)
+  }
+}
+
+@Component({
+  selector: 'app-login-resume',
+  templateUrl: './login-resume.component.html',
+})
+export class LoginResumeComponent implements OnInit {
+  constructor(private myService: AppService) {}
+
+  ngOnInit(): void {
+    this.myService.loginPageRendered.next(true)
+  }
+}

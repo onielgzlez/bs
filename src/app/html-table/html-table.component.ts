@@ -38,3 +38,35 @@ export class HtmlTableComponent implements OnInit {
     }
   }
 }
+
+@Component({
+  selector: 'app-html-links',
+  templateUrl: './links.component.html',
+})
+export class HtmlLinksComponent {  
+  @Input() values: any;
+}
+
+@Component({
+  selector: 'app-html-default',
+  templateUrl: './default.component.html',
+})
+export class HtmlDefaultComponent {  
+  @Input() value: any;
+}
+
+@Component({
+  selector: 'app-html-icon',
+  templateUrl: './icon.component.html',
+})
+export class HtmlIconComponent {  
+  @Input() column: any;
+}
+
+@Component({
+  selector: 'app-html-img',
+  templateUrl: './img.component.html',
+})
+export class HtmlImgComponent {  
+  @Input() column: any;
+}

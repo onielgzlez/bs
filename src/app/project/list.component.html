@@ -1,0 +1,38 @@
+<div class="is-flex is-align-items-center is-bordered-bottom pb-4 mb-4 has-text-right">
+    <h4 class="mr-3">¿Necesitas una reevaluación?</h4>  <button class="button is-borderless is-primary is-rounded js-modal-trigger" data-target="modal-reevaluacion"> Solicitar</button>  
+  </div>                     
+  <div class="columns is-flex is-block-mobile is-justify-content-space-between is-align-items-center is-bordered-bottom mb-6">
+      <div class="column">
+          <h1 class="mb-1">CopcopCo</h1>  
+          <span class="mb-2 is-block">Tipo de proyecto: <strong > Evaluación</strong></span>
+          <span>Estado: <strong class="has-background-primary-light px-2 is-radius"> Abierto</strong></span>                              
+          <div class="is-flex is-align-items-center mt-2">
+              <span class="las la-calendar mr-2"></span> 
+              <span>Fecha de creación:<strong>09/11/2023</strong></span> 
+          </div>
+      </div>
+      <div class="column">
+          <div class="is-flex">
+          <a [routerLink]="'/proyecto'" class="mr-3 has-background-transparent button is-size-6 has-text-dark has-no-decoration  is-borderless has-button-hover-white "><i class="las la-chart-pie mr-2 is-size-5"></i> Gráficos</a>
+          <a [routerLink]="'/tablero'" class="mr-3 has-background-transparent  button is-size-6 has-text-dark has-no-decoration is-borderless has-button-hover-white "><i class="las la-columns mr-2 is-size-5"></i> Tablero</a>
+          <a [routerLink]="'/listado'" class="mr-3 has-background-transparent  button is-size-6 has-text-dark has-no-decoration is-borderless has-button-hover-white is-active"><i class="las la-list mr-2 is-size-5"></i> Listado</a>
+          </div>
+      </div>
+      <div class="column has-text-right">
+          <button class=" is-pulled-right is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center ml-2" >
+              <i class="las la-print  is-size-4 "></i>
+              <span class="has-no-decoration" >Imprimir</span>
+          </button> 
+          <button class=" is-pulled-right is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center js-modal-trigger" data-target="modal-filtro">
+              <i class="las la-filter  is-size-4 "></i>
+              <span class="has-no-decoration" >Filtros</span>
+          </button>                            
+      </div>                        
+  </div>
+   <div class="columns is-scroll-mobile">
+      <div class="column">
+        <app-html-table [class]="bugs.class"
+        [columns]="bugs.columns"
+        [values]="bugs.values"></app-html-table>
+      </div>
+   </div>
