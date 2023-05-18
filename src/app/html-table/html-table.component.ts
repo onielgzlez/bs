@@ -20,22 +20,33 @@ export class HtmlTableComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.values) {
-      this.values = this.values.map((value: any)=> {
+      this.values = this.values.map((value: any) => {
         value.values = value.values.map((column: any) => {
           if (!column.type) {
-            column.type = 'default'
+            column.type = 'default';
           }
-          return column
-        })
-        return value
-      })
+          return column;
+        });
+        return value;
+      });
+    }
+
+    if (this.columns) {
+      this.columns = this.columns.map((column: any) => {
+        if (!column.type) {
+          column.type = 'default';
+        }
+        return column;
+      });
     }
 
     this.tableOptions = {
-      class: this.class || 'card px-3 is-fullwidth table is-size-6 is-relative has-left-border has-border-left-gradient has-shadow',
+      class:
+        this.class ||
+        'card px-3 is-fullwidth table is-size-6 is-relative has-left-border has-border-left-gradient has-shadow',
       columns: this.columns,
       values: this.values,
-    }
+    };
   }
 }
 
@@ -43,7 +54,7 @@ export class HtmlTableComponent implements OnInit {
   selector: 'app-html-links',
   templateUrl: './links.component.html',
 })
-export class HtmlLinksComponent {  
+export class HtmlLinksComponent {
   @Input() values: any;
 }
 
@@ -51,7 +62,7 @@ export class HtmlLinksComponent {
   selector: 'app-html-default',
   templateUrl: './default.component.html',
 })
-export class HtmlDefaultComponent {  
+export class HtmlDefaultComponent {
   @Input() value: any;
 }
 
@@ -59,7 +70,15 @@ export class HtmlDefaultComponent {
   selector: 'app-html-icon',
   templateUrl: './icon.component.html',
 })
-export class HtmlIconComponent {  
+export class HtmlIconComponent {
+  @Input() column: any;
+}
+
+@Component({
+  selector: 'app-html-check',
+  templateUrl: './check.component.html',
+})
+export class HtmlCheckComponent {
   @Input() column: any;
 }
 
@@ -67,6 +86,14 @@ export class HtmlIconComponent {
   selector: 'app-html-img',
   templateUrl: './img.component.html',
 })
-export class HtmlImgComponent {  
+export class HtmlImgComponent {
+  @Input() column: any;
+}
+
+@Component({
+  selector: 'app-html-filter',
+  templateUrl: './filter.component.html',
+})
+export class HtmlFilterComponent {
   @Input() column: any;
 }

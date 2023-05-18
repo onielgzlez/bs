@@ -1,3 +1,3 @@
-<a [href]="column.link" [title]="column.value" *ngFor="let column of values" [ngClass]="column.linkClass">
+<a [href]="column.link" [title]="column.value" [target]="column.target" *ngFor="let column of values" [ngClass]="column.linkClass">
     <i [ngClass]="column.iconClass" *ngIf="column.iconClass"></i> {{ column.value }}
 </a>

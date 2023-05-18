@@ -13,11 +13,13 @@ import {
   ProjectComponent,
   ProjectDetailComponent,
 } from './project/project.component';
-import { 
-  BoardComponent,
-  ListComponent,
-} from './project/board.component';
-import { AssignmentComponent } from './assignment/assignment.component';
+import { BoardComponent, ListComponent } from './project/board.component';
+import {
+  AssignmentComponent,
+  Assignment2Component,
+  Assignment3Component,
+  Assignment4Component,
+} from './assignment/assignment.component';
 import { PaymentComponent } from './payment/payment.component';
 import {
   LoginComponent,
@@ -44,6 +46,9 @@ const routes: Routes = [
   { path: 'tablero', component: BoardComponent },
   { path: 'listado', component: ListComponent },
   { path: 'asignaciones', component: AssignmentComponent },
+  { path: 'asignaciones2', component: Assignment2Component },
+  { path: 'asignaciones3', component: Assignment3Component },
+  { path: 'asignaciones4', component: Assignment4Component },
   { path: 'facturacion', component: PaymentComponent },
   { path: 'login', component: LoginComponent },
   { path: 'login-onboarding', component: LoginBoardComponent },

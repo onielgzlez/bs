@@ -5,14 +5,18 @@ import {
   ApexNonAxisChartSeries,
   ApexChart,
   ApexResponsive,
+  ApexYAxis,
+  ApexXAxis,
 } from 'ng-apexcharts';
 
 export type ChartOptions = {
   series: ApexNonAxisChartSeries;
   chart: ApexChart;
   responsive: ApexResponsive[];
-  labels: any;
-  colors: any[];
+  labels?: any;
+  colors?: any[];
+  yaxis?: ApexYAxis;
+  xaxis?: ApexXAxis;
 };
 
 @Component({

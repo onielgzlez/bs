@@ -6,4 +6,5 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AppService {
   loginPageRendered = new BehaviorSubject<boolean>(false);
+  teamPageRendered = new BehaviorSubject<boolean>(false);
 }

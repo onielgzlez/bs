@@ -1,1 +1,193 @@
-<p>project works!</p>
+<div class="is-flex is-align-items-center is-bordered-bottom pb-4 mb-4 has-text-right">
+    <h4 class="mr-3">¿Necesitas una reevaluación?</h4> <button
+        class="button is-borderless is-primary is-rounded js-modal-trigger" data-target="modal-reevaluacion">
+        Solicitar</button>
+</div>
+<div
+    class="columns is-block-mobile is-flex is-justify-content-space-between is-align-items-center is-bordered-bottom mb-6">
+    <div class="column">
+        <h1 class="mb-1">CopcopCo</h1>
+        <span class="mb-2 is-block">Tipo de proyecto: <strong> Evaluación</strong></span>
+        <span>Estado: <strong class="has-background-primary-light px-2 is-radius py-0 mb-3"> Abierto</strong></span>
+        <div class="is-flex is-align-items-center mt-2">
+            <span class="las la-calendar mr-2"></span>
+            <span>Fecha de creación:<strong>09/11/2023</strong></span>
+        </div>
+    </div>
+    <div class="column">
+        <div class="is-flex">
+            <a href="proyecto"
+                class="mr-3 has-background-transparent button is-size-6 has-text-dark has-no-decoration  is-borderless has-button-hover-white is-active "><i
+                    class="las la-chart-pie mr-2 is-size-5"></i> Gráficos</a>
+            <a href="tablero"
+                class="mr-3 has-background-transparent  button is-size-6 has-text-dark has-no-decoration is-borderless has-button-hover-white"><i
+                    class="las la-columns mr-2 is-size-5"></i> Tablero</a>
+            <a href="listado"
+                class="mr-3 has-background-transparent  button is-size-6 has-text-dark has-no-decoration is-borderless has-button-hover-white"><i
+                    class="las la-list mr-2 is-size-5"></i> Listado</a>
+        </div>
+    </div>
+    <div class="column has-text-right">
+        <button
+            class=" is-pulled-right is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center ml-2">
+            <i class="las la-print  is-size-4 "></i>
+            <span class="has-no-decoration">Imprimir</span>
+        </button>
+    </div>
+</div>
+<div id="cont-graficos">
+
+    <div class="columns">
+        <div class="column">
+            <h2 class="mb-3">Descripción</h2>
+            <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nesciunt dolorem saepe,
+                molestiae officia autem quod itaque eligendi praesentium, earum vero debitis recusandae alias distinctio
+                repellendus, quam architecto libero dolor.</p>
+
+        </div>
+        <div class="column">
+            <h2 class="mb-3">Servicios</h2>
+            <app-html-table [class]="class" [columns]="columns" [values]="values"></app-html-table>
+        </div>
+    </div>
+    <div
+        class="card p-4 is-fullwidth has-left-border-danger is-clipped is-relative is-size-5 is-flex is-align-items-center mb-5">
+        <i class="las la-exclamation-triangle mx-4 is-size-3 has-text-danger"></i>
+        <h3>
+            <span class="mr-4">
+                Críticas por mitigar
+            </span>
+        </h3>
+        <i
+            class="las mr-2 is-size-4 is-flex-wrap-wrap is-justify-content-center is-align-content-center has-text-light image is-48x48 has-background-danger is-flex is-rounded is-block">
+            <span class="is-block is-size-4">30</span></i>
+
+
+    </div>
+    <div class="columns">
+        <div class="column">
+            <div class="is-flex is-block-mobile is-align-items-center ">
+                <div class="has-text-centered ml-6 mr-6 has-border-right-arrow is-relative mb-3">
+                    <strong class="is-block is-size-1 ">30</strong>
+                    Totales
+                </div>
+                <div class="is-inline is-block-mobile has-text-centered mt-5-mobile">
+                    <div class="is-inline">
+                        <span class="ml-5 mr-5 is-inline is-align-items-center "><strong
+                                class=" is-size-3 mr-2">20</strong>Asignagas</span>
+                    </div>
+                    <div class="is-inline">
+                        <span class="mr-5 is-inline is-align-items-center "><strong class=" is-size-3 mr-2">5</strong>En
+                            desarrollo</span>
+                    </div>
+                    <div class="is-inline">
+                        <span class="mr-5 is-inline is-align-items-center "><strong
+                                class=" is-size-3 mr-2">5</strong>Entregados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-one-third">
+            <div class="card">
+                <header class="mb-4 is-flex is-align-items-center">
+                    <i class="las la-server mr-3"></i>
+                    <h3>
+                        Host/IP
+                    </h3>
+                </header>
+                <ul class="list ml-5">
+                    <li>
+                        portal.com
+                    </li>
+                    <li>
+                        205.165.100
+                    </li>
+                    <li>
+                        186.301.400
+                    </li>
+                    <li>
+                        nuevo.cl
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <header class="mb-4 is-flex is-align-items-center">
+                    <i class="las la-users mr-3"></i>
+                    <h3>
+                        Equipo
+                    </h3>
+                </header>
+                <ul class="list ml-5">
+                    <li>
+                        Carlos Martinez
+                    </li>
+                    <li>
+                        Verónica Santander
+                    </li>
+                    <li>
+                        Michelle Balcarce
+                    </li>
+                    <li>
+                        Antonio Ovalle
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="column is-one-third">
+            <div class="card">
+                <header class="mb-4 is-flex is-align-items-center">
+                    <i class="las la-radiation-alt mr-3"></i>
+                    <h3>
+                        Riesgos
+                    </h3>
+                </header>
+                <div class="is-fullwidth has-text-centered">
+                    <div class="is-inline-block has-text-centered">
+                        <app-chart [options]="{ chart: {
+                            width: 210,
+                            type: 'pie',
+                            }}"></app-chart>
+                    </div>
+                </div>
+                <div class="is-flex is-justify-content-center">
+                    <div class="is-block mx-3 is-size-5 has-text-centered">
+                        <div>
+                            <div class="has-text-centered status-critical-dot ml-1 mr-3 is-inline-block"></div>
+                            <div>Crítico</div>
+                        </div>
+                    </div>
+                    <div class="is-block mx-3 is-size-5 has-text-centered">
+                        <div>
+                            <div class="has-text-centered status-medium-dot ml-1 mr-3 is-inline-block"></div>
+                            <div>Medio</div>
+                        </div>
+                    </div>
+                    <div class="is-block mx-3 is-size-5 has-text-centered">
+                        <div>
+                            <div class="has-text-centered status-low-dot ml-1 mr-3 is-inline-block"></div>
+                            <div>Bajo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="column ">
+            <div class="card">
+                <header class="mb-4 is-flex is-align-items-center">
+                    <i class="las la-burn mr-3"></i>
+                    <h3>
+                        Score SVSS
+                    </h3>
+                </header>
+                <div class="is-fullwidth has-text-centered">
+                    <div class="is-inline-block has-text-centered">
+                        <app-chart [options]="options"></app-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,12 +7,96 @@
             </div>
         </div>
         <div class="columns">
-            <div class="column is-flex is-block-mobile is-full ">
+            <div class="column is-flex is-block-mobile " [ngClass]="{'is-full': !showMenu,'is-two-thirds': showMenu}">
                 <div class="pl-4">
                     <app-menu></app-menu>
                 </div>
                 <div class="p-3 pt-5 is-fullwidth is-pt4">
                     <router-outlet></router-outlet>
+                </div>
+            </div>
+            <div class="column mr-4" *ngIf="showMenu">
+                <div id="contenido_oculto" class="is-hidden">
+                    <div class="is-flex is-justify-content-space-between is-align-items-center pt-5 mb-5 pb-3">
+                      <button (click)="hide()" class="is-radius is-bordered  has-background-white p-3 py-3 is-inlineblock is-size-7 is-clickable">
+                        <i class="las la-times"></i>
+                      </button>
+                      <h3>Nuevo Integrante</h3>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="nombres-usuario" class=" is-block" >
+                        Nombre de usuario (obligatorio)
+                        </label>
+                        <input id="nombres-usuario" type="text" class="input is-radius">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="correo" class=" is-block" >
+                        Correo electrónico
+                        </label>
+                        <input id="correo" type="text" class="input is-radius">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="nombres" class=" is-block" >
+                            Nombres
+                        </label>
+                        <input id="nombres" type="text" class="input is-radius">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="apellido-usuario" class=" is-block" >
+                            Apellidos
+                        </label>
+                        <input id="apellido-usuario" type="text" class="input is-radius">
+                    </div>
+                    <div class="select is-fullwidth form-group mb-4">
+                        <label for="estado" class=" is-block" >
+                          Estado
+                        </label> 
+                        <select  id="estado"  class="is-radius">
+                            <option>Activo</option>
+                            <option>Inactivo</option>
+                        </select>
+                    </div>
+                    <div class="select is-fullwidth form-group mb-4">
+                        <label for="perfil" class=" is-block" >
+                          Perfil
+                        </label> 
+                        <select id="perfil" class="is-radius">
+                            <option>Administrador cliente</option>
+                            <option>Encargado de redes</option>
+                            <option>Visualizador</option>
+                        </select>
+                    </div>
+                    <div class="from-group mb-5">
+                        <p class="mb-2"><strong>Contraseña</strong> </p>
+                        <div class="columns">
+                            <div class="column">
+                                <button class="button is-success is-radius" (click)="showModal()">
+                                    <i class="las la-lock mr-2"></i> Cambiar contraseña
+                                </button>
+                            </div>
+                            <div class="column">
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input is-success is-radius is-fullwidth" type="text" placeholder="Text input" value="JUV4384fdS1">
+                                    <span class="icon is-right">
+                                        <i class="las la-eye"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 is-flex is-justify-content-space-between is-align-items-center is-block-mobile">
+                        <div>
+                            <label class="checkbox">
+                              <input type="checkbox" class="is-info mr-3">
+                               Enviar email a usuario con la información para su ingreso
+                            </label><br>
+                        </div>                        
+                        <button class="button is-primary is-radius"> Crear </button>
+                    </div>
                 </div>
             </div>
         </div>

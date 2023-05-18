@@ -17,16 +17,27 @@ import {
   ProjectComponent,
   ProjectDetailComponent,
 } from './project/project.component';
-import { BoardComponent, ListComponent } from './project/board.component';
+import {
+  BoardComponent,
+  BoardListComponent,
+  ListComponent,
+} from './project/board.component';
 import { CategoryComponent } from './category/category.component';
 import { ServerComponent } from './server/server.component';
-import { AssignmentComponent } from './assignment/assignment.component';
+import {
+  AssignmentComponent,
+  Assignment2Component,
+  Assignment3Component,
+  Assignment4Component,
+} from './assignment/assignment.component';
 import {
   HtmlTableComponent,
   HtmlLinksComponent,
   HtmlDefaultComponent,
   HtmlIconComponent,
   HtmlImgComponent,
+  HtmlCheckComponent,
+  HtmlFilterComponent,
 } from './html-table/html-table.component';
 import { MenuComponent } from './menu/menu.component';
 import {
@@ -59,15 +70,21 @@ import { LoginBoardComponent } from './login/login-board.component';
     ProjectComponent,
     ProjectDetailComponent,
     BoardComponent,
+    BoardListComponent,
     ListComponent,
     CategoryComponent,
     ServerComponent,
     AssignmentComponent,
+    Assignment2Component,
+    Assignment3Component,
+    Assignment4Component,
     HtmlTableComponent,
     HtmlLinksComponent,
     HtmlDefaultComponent,
     HtmlIconComponent,
     HtmlImgComponent,
+    HtmlCheckComponent,
+    HtmlFilterComponent,
     MenuComponent,
     LoginComponent,
     LoginBoardComponent,

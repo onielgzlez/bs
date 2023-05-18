@@ -11,25 +11,18 @@
                 <i class="las la-filter  is-size-4 "></i>
                 <span class="has-no-decoration">Filtros:</span>
             </button>
-            <ul class="is-flex">
-                <li>
-                    <div class="tag has-background-white mb-2 mr-2 py-4 mt-3 ml-3">Detectada <button
-                            class="is-clickable has-background-transparent is-borderless has-button-hover-sm ml-3"><i
-                                class="las la-times"></i> </button></div>
-                </li>
-            </ul>
         </div>
     </div>
 </div>
 
 <div class="tabs is-toggle is-fullwidth">
     <ul>
-        <li class="is-active has-text-white">
+        <li>
             <a href="asignaciones">
                 <span>
-                    <h4 class="has-text-white is-flex has-align-items-center">
+                    <h4 class="is-flex has-align-items-center">
                         <i
-                            class="las mr-2  is-flex-wrap-wrap is-justify-content-center is-align-content-center image is-32x32 has-background-white is-flex is-rounded is-block">
+                            class="las mr-2  is-flex-wrap-wrap is-justify-content-center is-align-content-center image is-32x32 has-background-transparent is-flex is-rounded is-block">
                             <span class="is-block has-text-primary is-size-6">1</span>
                         </i>
                         <span> Selecciona vulnerabilidades</span>
@@ -40,7 +33,7 @@
         <li>
             <a href="asignaciones2">
                 <span>
-                    <h4 class=" is-flex has-align-items-center">
+                    <h4 class="is-flex has-align-items-center">
                         <i
                             class="las mr-2  is-flex-wrap-wrap is-justify-content-center is-align-content-center  image is-32x32 has-background-transparent is-flex is-rounded is-block is-bordered">
                             <span class="is-block has-text-primary is-size-6">2</span>
@@ -52,12 +45,12 @@
                 </span>
             </a>
         </li>
-        <li>
+        <li class="is-active has-text-white">
             <a href="asignaciones3">
                 <span>
-                    <h4 class=" is-flex has-align-items-center">
+                    <h4 class="has-text-white is-flex has-align-items-center">
                         <i
-                            class="las mr-2  is-flex-wrap-wrap is-justify-content-center is-align-content-center image is-32x32 has-background-transparent is-flex is-rounded is-block is-bordered">
+                            class="las mr-2  is-flex-wrap-wrap is-justify-content-center is-align-content-center image is-32x32 has-background-white is-flex is-rounded is-block is-bordered">
                             <span class="is-block has-text-primary is-size-6">3</span>
                         </i>
                         <span> Confirma asignaciones</span>
@@ -80,14 +73,41 @@
         </li>
     </ul>
 </div>
-<div class="columns is-scroll-mobile">
+<div class="columns  is-scroll-mobile  pb-5">
     <div class="column">
-        <app-html-table [class]="bugs.class" [columns]="bugs.columns" [values]="bugs.values"></app-html-table>
+        <div class="box is-fullwidth  is-relative has-left-border is-clipped has-border-left-gradient has-shadow">
+            <h3 class="mb-4">Vulnerabilidades seleccionadas</h3>
+            <ul class="list ml-5">
+                <li>
+                    SurFace_124D3
+                </li>
+                <li>
+                    ProTest_s3
+                </li>
+                <li>
+                    Prueba tomas
+                </li>
+            </ul>
+
+        </div>
     </div>
+    <div class="column">
+        <div class="box is-fullwidth  is-relative has-left-border is-clipped has-border-left-gradient has-shadow">
+            <h3 class="mb-4">Usuarios seleccionados</h3>
+            <ul class="list ml-5">
+                <li>
+                Constanza Flores Carvajal
+                </li>
+                <li>
+                Pía Agustina Rivera Fernandez
+                </li>
+            </ul>
+        </div>
+    </div>   
 </div>
 <div class="columns">
     <div class="column">
-        <div class="has-text-right mb-3"><a href="asignaciones2"
+        <div class="has-text-right mb-3"><a href="asignaciones4"
                 class="button has-text-white is-primary is-radius is-inline-block">Seleccionar y continuar</a>
         </div>
     </div>

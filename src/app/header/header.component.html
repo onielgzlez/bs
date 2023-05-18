@@ -1,11 +1,11 @@
 <section class="is-flex is-justify-content-space-between p-3 is-bordered-bottom is-align-items-center">
-    <a [routerLink]="'/inicio'" class="is-block img-logo">
+    <a href="inicio" class="is-block img-logo">
         <img class="img-logo" src="assets/images/logo.png" alt="">
     </a>
     <div class="is-flex is-align-items-center">
-        <div class="dropdown is-right" [ngClass]="active">
+        <div class="dropdown is-right">
             <div class="dropdown-trigger">
-                <button (click)="toogleActive(isOpen)"
+                <button
                     class="is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center"
                     aria-haspopup="true" aria-controls="panel-user">
                     <figure class="image is-32x32 is-inline-flex mr-3 ">
@@ -21,16 +21,16 @@
                         constanza@barnard.cl
                     </div>
                     <div class=" is-bordered-bottom mt-0 mb-2"></div>
-                    <a [routerLink]="'/facturacion'" (click)="toogleActive(true)"
+                    <a href="facturacion"
                         class="button is-borderless has-no-decoration has-text-primary has-button-hover">
                         Facturación
                     </a>
-                    <button (click)="toogleActive(true)"
+                    <button
                         class="button is-borderless has-no-decoration has-text-primary has-button-hover js-modal-trigger"
                         data-target="contrasena">
                         Cambiar contraseña
                     </button>
-                    <a href="login" (click)="toogleActive(true)"
+                    <a href="login"
                         class="button is-borderless has-no-decoration has-text-primary has-button-hover">
                         Cerrar sesión
                     </a>

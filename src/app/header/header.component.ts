@@ -6,16 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  active = '';
-  isOpen = false;
-
-  toogleActive(isOpen: boolean) {
-    this.isOpen = !isOpen
-
-    if (this.isOpen) {
-      this.active = 'is-active'
-    } else {
-      this.active = ''
-    }
-  }
+  
 }

@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-bord',
+  selector: 'app-board',
   templateUrl: './board.component.html',
 })
 export class BoardComponent implements AfterViewInit {
@@ -12,6 +12,13 @@ export class BoardComponent implements AfterViewInit {
       isPt4.classList.add('pt-4');
     }
   }
+}
+
+@Component({
+  selector: 'app-board-list',
+  templateUrl: './board-list.component.html',
+})
+export class BoardListComponent {
 }
 
 @Component({

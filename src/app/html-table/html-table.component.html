@@ -1,26 +1,31 @@
 <table [ngClass]="tableOptions.class">
-    <tr>
-        <th [ngClass]="column.class" *ngFor="let column of tableOptions.columns">
-            {{ column.label || column.field }}
-        </th>
-    </tr>
-    <tr [ngClass]="data.class" *ngFor="let data of tableOptions.values">
-        <td [ngClass]="column.class" *ngFor="let column of data.values">
-            <app-html-links [values]="column.value" *ngIf="column.type === 'links'"></app-html-links>
-            <span *ngIf="column.span" [ngClass]="column.spanClass"></span>
-            <a [routerLink]="column.link" [title]="column.value" [ngClass]="column.linkClass"
-                *ngIf="column.type === 'link'">
-                {{ column.value }}
-            </a>
-            <button [ngClass]="column.btnClass" [attr.data-target]="column.btnTarget" *ngIf="column.type ==='btn'">
-                {{ column.value }}
-            </button>
-            <app-html-icon [column]="column" *ngIf="column.type === 'icon'"></app-html-icon>
-            <span *ngIf="column.type === 'tooltip'" [ngClass]="column.tipClass" [attr.data-tooltip]="column.value">
-                <i [ngClass]="column.iconClass"></i>
-            </span>
-            <app-html-img [column]="column" *ngIf="column.type === 'img'"></app-html-img>
-            <app-html-default [value]="column.value" *ngIf="column.type === 'default'"></app-html-default>
-        </td>
-    </tr>
+    <tbody>
+        <tr>
+            <th [ngClass]="column.class" *ngFor="let column of tableOptions.columns">
+                <app-html-check *ngIf="column.type === 'check'"></app-html-check>
+                <app-html-filter *ngIf="column.type === 'filter'"></app-html-filter>
+                <app-html-default [value]="column.label || column.field" *ngIf="column.type === 'default'"></app-html-default>
+            </th>
+        </tr>
+        <tr [ngClass]="data.class" *ngFor="let data of tableOptions.values">
+            <td [ngClass]="column.class" *ngFor="let column of data.values">
+                <app-html-check [column]="column" *ngIf="column.type === 'check'"></app-html-check>
+                <app-html-links [values]="column.value" *ngIf="column.type === 'links'"></app-html-links>
+                <span *ngIf="column.span" [ngClass]="column.spanClass"></span>
+                <a [href]="column.link" [target]="column.target" [title]="column.value" [ngClass]="column.linkClass"
+                    *ngIf="column.type === 'link'">
+                    <i [ngClass]="column.iconClass" *ngIf="column.iconClass"></i> {{ column.value }}
+                </a>
+                <button [ngClass]="column.btnClass" [attr.data-target]="column.btnTarget" *ngIf="column.type ==='btn'">
+                    {{ column.value }}
+                </button>
+                <app-html-icon [column]="column" *ngIf="column.type === 'icon'"></app-html-icon>
+                <span *ngIf="column.type === 'tooltip'" [ngClass]="column.tipClass" [attr.data-tooltip]="column.value">
+                    <i [ngClass]="column.iconClass"></i>
+                </span>
+                <app-html-img [column]="column" *ngIf="column.type === 'img'"></app-html-img>
+                <app-html-default [value]="column.value" *ngIf="column.type === 'default'"></app-html-default>
+            </td>
+        </tr>
+    </tbody>
 </table>

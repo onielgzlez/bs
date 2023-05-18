@@ -1,1 +1,97 @@
-<p>team works!</p>
+<div class="is-flex  is-block-mobile is-justify-content-space-between is-fullwidth mb-5">
+    <h1 >Equipo</h1>  
+    <div class="has-text-right">
+    <button class="has-button-hover p-0 is-borderless has-background-transparent is-clickable is-relative is-inline-flex is-align-items-center" (click) = "show()">
+        <span class="mr-1">Agregar integrante</span> <i class="las la-plus-square is-size-7 ml-1 "></i>
+    </button>
+    </div>
+</div>
+<table class="table is-fullwidth is-size-6 is-radius is-relative has-left-border has-border-left-gradient has-shadow  is-scroll-mobile is-block-mobile   ">
+    <tr>
+        <th>
+            Nombre de integrante
+        </th>
+        <th>
+            Perfil
+        </th>
+        
+        <th>
+            Creación
+        </th>
+        <th class="has-text-right">
+            <a href="" data-tooltip="Filtrar" class="has-tooltip-active has-tooltip-top is-relative has-button-hover-sm"><i class="las la-sort-amount-down is-size-4 has-text-dar mb-2"></i></a>
+        </th>
+    </tr>
+    <tr>
+        <td class="has-vertical-align-middle  is-max-td">
+            <button (click) = "show()" class=" has-text-left is-flex is-align-items-center has-background-transparent is-borderless has-button-hover-sm is-clickable">
+                <figure class="image is-32x32 is-inline-flex mr-3 "> <img src="assets/images/usuario1.jpg" alt="" class="is-rounded"> </figure> 
+                <span >Constanza Flores Carvajal</span> 
+            </button>
+        </td>
+        <td>
+            Administrador cliente
+        </td>
+        <td>
+            11/09/2022
+        </td>
+        <td  class="has-text-right">
+            <button (click) = "show()" data-tooltip="Editar usuario" class="has-tooltip-active has-tooltip-top is-relative has-button-hover-sm has-background-transparent is-borderless is-clickable "><i class="is-block las la-pen has-text-primary is-size-7"></i></button>
+            <button data-target="eliminar-usuario" data-tooltip="Eliminar usuario" class="has-tooltip-active has-tooltip-top is-relative has-button-hover-sm js-modal-trigger has-background-transparent is-borderless is-clickable "><i class="las la-trash-alt has-text-primary is-size-7"></i></button>
+        </td>
+    </tr>
+    <tr>
+        <td  class="has-vertical-align-middle is-max-td">
+            <button (click) = "show()" class=" has-text-left is-flex is-align-items-center has-background-transparent is-borderless has-button-hover-sm is-clickable">
+                <figure class="image is-32x32 is-inline-flex mr-3"> <img src="assets/images/usuario2.jpg" alt="" class="is-rounded"></figure> 
+                <span>Pedro Gustavo Pinares Bon</span>
+            </button>
+        </td>
+        <td>
+            Visualizador
+        </td>
+        <td>
+            11/09/2022
+        </td>
+        <td class="has-text-right">
+            <button (click) = "show()" data-tooltip="Editar usuario" class="has-tooltip-active has-tooltip-left is-relative has-button-hover-sm has-background-transparent is-borderless is-clickable "><i class="is-block las la-pen has-text-primary is-size-7"></i></button>
+            <button data-target="eliminar-usuario" data-tooltip="Eliminar usuario" class="has-tooltip-active has-tooltip-top is-relative has-button-hover-sm js-modal-trigger has-background-transparent is-borderless is-clickable "><i class="las la-trash-alt has-text-primary is-size-7"></i></button>
+        </td>
+    </tr>
+    <tr>
+        <td  class="has-vertical-align-middle is-max-td">
+            <button (click) = "show()" class=" has-text-left is-flex is-align-items-center has-background-transparent is-borderless has-button-hover-sm is-clickable">
+                <figure class="image is-32x32 is-inline-flex mr-3"> <img src="assets/images/usuario3.jpg" alt="" class="is-rounded"></figure> 
+                <span>Pía Agustina Rivera Fernandez</span>
+            </button>
+        </td>
+        <td>
+        Encargado de redes
+        </td>
+        <td>
+            11/09/2022
+        </td>
+        <td class="has-text-right">
+            <button (click) = "show()" data-tooltip="Editar usuario" class="has-tooltip-active has-tooltip-right is-relative has-button-hover-sm has-background-transparent is-borderless is-clickable "><i class="is-block las la-pen has-text-primary is-size-7"></i></button>
+            <button data-target="eliminar-usuario" data-tooltip="Eliminar usuario" class="has-tooltip-active has-tooltip-bottom is-relative has-button-hover-sm js-modal-trigger has-background-transparent is-borderless is-clickable "><i class="las la-trash-alt has-text-primary is-size-7"></i></button>
+        </td>
+    </tr>
+    <tr>
+        <td  class="has-vertical-align-middle  is-max-td">
+            <button (click) = "show()" class=" has-text-left is-flex is-align-items-center has-background-transparent is-borderless has-button-hover-sm is-clickable">
+                <figure class="image is-32x32 is-inline-flex mr-3"> <img src="assets/images/avatar.jpg" alt="" class="is-rounded"></figure> 
+                <span>Carlos Toro Mujica</span>
+                </button>
+        </td>
+        <td>
+        Encargado de redes
+        </td>
+        <td>
+            11/09/2022
+        </td>
+        <td class="has-text-right">
+            <button (click) = "show()" data-tooltip="Editar usuario" class="has-tooltip-active has-tooltip-top is-relative has-button-hover-sm is-relative has-tooltip-active has-tooltip-top has-background-transparent is-borderless is-clickable "><i class="las la-pen has-text-primary is-size-7"></i></button>
+            <button data-target="eliminar-usuario" data-tooltip="Eliminar usuario" class="has-tooltip-active has-tooltip-top is-relative has-button-hover-sm js-modal-trigger has-background-transparent is-borderless is-clickable "><i class="las la-trash-alt has-text-primary is-size-7"></i></button>
+        </td>
+    </tr>
+</table>
