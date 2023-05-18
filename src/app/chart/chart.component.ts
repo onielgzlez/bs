@@ -31,7 +31,7 @@ export class CustomChartComponent implements OnInit {
 
   constructor() {
     this.chartOptions = {
-      series: [7, 3, 30],
+      series: [3, 7, 3, 7, 30],
       chart: {
         width: 250,
         type: 'pie',
@@ -45,8 +45,8 @@ export class CustomChartComponent implements OnInit {
         show: false,
         position: 'bottom',
       },
-      colors: ['#55A6FF', '#FFCC00', '#F75454'],
-      labels: ['Bajos', 'Medios', 'Críticos'],
+      colors: ['#ff8500', '#FFCC00', '#00d07f', '#55A6FF', '#F75454'],
+      labels: ['Muy Altos', 'Altos', 'Moderados', 'Bajos', 'Críticos'],
 
       responsive: [
         {

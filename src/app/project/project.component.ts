@@ -323,6 +323,7 @@ export class ProjectDetailComponent {
       height: 250,
       type: 'radar',
     },
+    colors: ['#55A6FF'],
     yaxis: {
       show: false,
       labels: {
@@ -356,28 +357,6 @@ export class ProjectDetailComponent {
     ],
   };
   class = 'table is-fullwidth card is-size-6'
-  /**
-   *
-                <tr>
-                    <td class="is-ellipsis"><a href="" target="_blank" class="link"> <i
-                                class="las la-file-pdf mr-2"></i>Haking Ético </a></td>
-                    <td>14/03/2022</td>
-                    <td>Software</td>
-                </tr>
-                <tr>
-                    <td class="is-ellipsis"><a href="" target="_blank" class="link"> <i
-                                class="las la-file-pdf mr-2"></i>Informe </a></td>
-                    <td>15/01/2022</td>
-                    <td>Wireless</td>
-                </tr>
-                <tr>
-                    <td class="is-ellipsis"><a href="" target="_blank" class="link"> <i
-                                class="las la-file-pdf mr-2"></i>Informe redes </a></td>
-                    <td>15/01/2022</td>
-                    <td>Redes</td>
-                </tr>
-            </table>
-   */
   columns = [
     {
       field: 'name',

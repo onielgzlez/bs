@@ -127,7 +127,7 @@ footer.modal-card-foot{
 	opacity: 0.5;
 	display: block;
 	position: absolute;
-	top:200px;
+	top:200px; 
 	bottom: -300px;
 	right:200px
 }
@@ -170,10 +170,19 @@ footer.modal-card-foot{
 a.has-text-primary:hover{
 	color:#0a4c8e!important
 }
-.has-text-danger{
+.has-text-danger{/*Estado Crítico*/
 	color:#F75454!important
 }
-.has-text-low{
+.has-text-lofty{/*Estado Muy Alto*/
+	color:#ff8500 !important
+}
+.has-text-warning{/*Estado Alto*/
+	color:#FFCC00 !important
+}
+.has-text-moderate{/*Estado Moderado*/
+	color:#00d07f!important
+}
+.has-text-low{/*Estado Bajo*/
 	color: #55A6FF!important;
 }
 .has-text-primary, a{
@@ -206,7 +215,12 @@ body{
 	background-color:#EAEFF4!important;
 	height: 100vh;
 }
-.status-critical-dot, .status-medium-dot, .status-low-dot{
+.status-critical-dot,
+.status-medium-dot,
+.status-low-dot,
+.status-lofty-dot,
+.status-warning-dot,
+.status-moderate-dot {
 	width: 7px;
 	height: 7px;
 	position:relative;
@@ -216,8 +230,14 @@ body{
 .status-critical-dot{	
 	background-color: #F75454;
 }
-.status-medium-dot{	
+.status-lofty-dot{	
+	background-color: #ff8500;
+}
+.status-warning-dot{	
 	background-color: #FFAE2E;
+}
+.status-moderate-dot{	
+	background-color: #00d07f;
 }
 .status-low-dot{	
 	background-color: #55A6FF;
@@ -641,4 +661,8 @@ select.select{
 
 .is-rotate-45{
 	transform: rotate(90deg)!important;
+}
+
+input.is-size-9 {
+    font-size:14px!important;
 }

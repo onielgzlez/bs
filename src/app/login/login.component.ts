@@ -15,6 +15,18 @@ export class LoginComponent implements OnInit {
 }
 
 @Component({
+  selector: 'app-login-onboard',
+  templateUrl: './login-onboard.component.html',
+})
+export class LoginOnBoardingComponent implements OnInit {
+  constructor(private myService: AppService) {}
+
+  ngOnInit(): void {
+    this.myService.loginPageRendered.next(true)
+  }
+}
+
+@Component({
   selector: 'app-login-demo',
   templateUrl: './login-demo.component.html',
 })

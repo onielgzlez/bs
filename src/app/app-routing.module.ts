@@ -25,8 +25,9 @@ import {
   LoginComponent,
   LoginDemoComponent,
   LoginResumeComponent,
+  LoginOnBoardingComponent,
 } from './login/login.component';
-import { LoginBoardComponent } from './login/login-board.component';
+//import { LoginBoardComponent } from './login/login-board.component';
 import { PasswordComponent } from './login/password.component';
 import { PasswordSentComponent } from './login/password.component';
 import { PasswordNewComponent } from './login/password.component';
@@ -36,6 +37,9 @@ const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: DashComponent },
   { path: 'inicio-empty', component: DashEmptyComponent },
+  { path: 'index', component: DashComponent },
+  { path: 'index-empty', component: DashEmptyComponent },
+  { path: 'index-sin-criticos', component: DashNotRiskComponent },
   { path: 'inicio-sin-criticos', component: DashNotRiskComponent },
   { path: 'equipo', component: TeamComponent },
   { path: 'vulnerabilidades', component: BugComponent },
@@ -51,7 +55,8 @@ const routes: Routes = [
   { path: 'asignaciones4', component: Assignment4Component },
   { path: 'facturacion', component: PaymentComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'login-onboarding', component: LoginBoardComponent },
+  //{ path: 'login-onboarding', component: LoginBoardComponent },
+  { path: 'login-onboarding', component: LoginOnBoardingComponent },
   { path: 'login-demo', component: LoginDemoComponent },
   { path: 'login-demo-resumen', component: LoginResumeComponent },
   { path: 'password-recuperar', component: PasswordComponent },

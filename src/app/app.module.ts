@@ -44,6 +44,7 @@ import {
   LoginComponent,
   LoginDemoComponent,
   LoginResumeComponent,
+  LoginOnBoardingComponent,
 } from './login/login.component';
 import {
   PasswordComponent,
@@ -87,7 +88,8 @@ import { LoginBoardComponent } from './login/login-board.component';
     HtmlFilterComponent,
     MenuComponent,
     LoginComponent,
-    LoginBoardComponent,
+    //LoginBoardComponent,
+    LoginOnBoardingComponent,
     LoginDemoComponent,
     LoginResumeComponent,
     PasswordComponent,
