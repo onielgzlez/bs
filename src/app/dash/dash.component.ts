@@ -12,6 +12,7 @@ export class DashComponent implements OnInit {
   @Input() topFiveProjects: any;
   @Input() assignments: any;
   @Input() assignmentExpires: any;
+  @Input() options: any;
 
   ngOnInit(): void {
     this.vulnerabilidades = {
@@ -719,6 +720,36 @@ export class DashComponent implements OnInit {
               class: 'is-ellipsis',
             },
           ],
+        },
+      ],
+    };
+
+    this.options = {
+      series: [3, 7, 3, 7, 30],
+      chart: {
+        width: 380,
+        type: 'donut',
+      },
+      dataLabels: {
+        enabled: false,
+        offsetX: 50,
+        offsetY: 50,
+      },
+      legend: {
+        show: true,
+        position: 'left',
+      },
+      colors: ['#ff8500', '#FFCC00', '#00d07f', '#55A6FF', '#F75454'],
+      labels: ['Muy Altos', 'Altos', 'Moderados', 'Bajos', 'Críticos'],
+
+      responsive: [
+        {
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200,
+            },
+          },
         },
       ],
     };
