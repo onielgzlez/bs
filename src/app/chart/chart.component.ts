@@ -45,7 +45,7 @@ export class CustomChartComponent implements OnInit {
         show: false,
         position: 'bottom',
       },
-      colors: ['#ff8500', '#FFCC00', '#00d07f', '#55A6FF', '#F75454'],
+      colors: ['#fd996b', '#f7db4f', '#24bfa8', '#3f94bd', '#f67aaf'],
       labels: ['Muy Altos', 'Altos', 'Moderados', 'Bajos', 'Críticos'],
 
       responsive: [

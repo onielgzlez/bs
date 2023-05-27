@@ -17,7 +17,7 @@ export class DashComponent implements OnInit {
   ngOnInit(): void {
     this.vulnerabilidades = {
       class:
-        'table is-size-6 is-fullwidth is-radius is-relative has-left-border has-border-left-gradient has-shadow is-scroll-mobile is-block-mobile',
+        'table is-size-6 is-fullwidth is-radius is-relative has-left-border has-border-left-gradient has-shadow is-scroll-mobile height-box',
       columns: [
         {
           field: 'ip',
@@ -132,8 +132,6 @@ export class DashComponent implements OnInit {
           field: 'critical',
           label: 'Criticidad',
           class: 'has-text-centered',
-          type: 'icon',
-          iconClass: 'las la-bug has-text-danger mr-2',
         },
         {
           field: 'title',
@@ -323,7 +321,7 @@ export class DashComponent implements OnInit {
 
     this.topFiveProjects = {
       class:
-        'table is-size-6 is-fullwidth is-radius is-relative has-left-border has-border-left-gradient has-shadow is-scroll-mobile is-block-mobile',
+        'table is-size-6 is-fullwidth is-radius is-relative has-left-border has-border-left-gradient has-shadow is-scroll-mobile height-box',
       columns: [
         {
           field: 'title',
@@ -471,7 +469,7 @@ export class DashComponent implements OnInit {
     
     this.assignments = {
       class:
-        'table is-size-6 is-fullwidth is-radius is-relative has-left-border has-border-left-gradient has-shadow is-scroll-mobile is-block-mobile',
+        'table is-size-6 is-fullwidth is-radius is-relative has-left-border has-border-left-gradient has-shadow is-scroll-mobile height-box',
       columns: [
         {
           field: 'assign',
@@ -611,7 +609,7 @@ export class DashComponent implements OnInit {
 
     this.assignmentExpires = {
       class:
-        'table is-size-6 is-fullwidth is-radius is-relative has-left-border has-border-left-gradient has-shadow is-scroll-mobile is-block-mobile',
+        'table is-size-6 is-fullwidth is-radius is-relative has-left-border has-border-left-gradient has-shadow is-scroll-mobile height-box',
       columns: [
         {
           field: 'assign',
@@ -737,9 +735,9 @@ export class DashComponent implements OnInit {
       },
       legend: {
         show: true,
-        position: 'left',
+        position: 'right',
       },
-      colors: ['#ff8500', '#FFCC00', '#00d07f', '#55A6FF', '#F75454'],
+      colors: ['#fd996b', '#f7db4f', '#24bfa8', '#3f94bd', '#f67aaf'],
       labels: ['Muy Altos', 'Altos', 'Moderados', 'Bajos', 'Críticos'],
 
       responsive: [

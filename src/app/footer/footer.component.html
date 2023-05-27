@@ -791,6 +791,155 @@
     <button class="modal-close is-large" aria-label="close"></button>
 
 </div>
+
+<div id="modal-filtro-proyecto" class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content  mt-5">
+        <div class="modal-card  is-radius">
+            <section class="modal-card-body p-5">
+                <div class="is-flex  is-flex-wrap-wrap is-align-content-center is-block-mobile mb-5 ">
+                    <i
+                        class="las la-filter mr-2 is-size-4 is-flex-wrap-wrap is-justify-content-center is-align-content-center has-text-light image is-48x48 has-background-info is-flex is-rounded"></i>
+                    <h3 class="modal-card-title mb-5 has-text-right has-text-left-mobile">Filtrar</h3>
+                </div>
+                <br>
+                <form action="#" class="form-cha">
+                    <div class="field mb-5">
+                        <label for="id-proyect">
+                            <h4 class="mb-1"> ID de proyecto</h4>
+                        </label>
+                        <input id="id-proyect" type="text" class="input is-radius is-fullwidth">
+                    </div>
+                    <div class="field mb-5  is-fullwidth">
+                        <label for="proyect">
+                            <h4 class="mb-1"> Proyecto</h4>
+                        </label>
+                        <select id="proyect" type="text" class="select is-radius is-fullwidth">
+                            <option value="" class="disabled">Selecciona un proyecto</option>
+                            <option value="">Apache 2.4.x < 2.4.47 Multiple Vulnerabilities</option>
+                            <option value="">Apache 2.4x < 2.4.52 Multiple Vulnerabilities</option>
+                            <option value="">Cifrado SSL de Median Fortaleza (SWEET32)</option>
+                            <option value="">Python Unsupported Version Detection</option>
+                            <option value="">Oracle Solaris critical patch update - oct2020_SCRUTI_3_33_26_0</option>
+                            <option value="">Oracle Solaris critical patch update - oct2020_SCRUTI_4_24_75_2</option>
+                            <option value="">Oracle Solaris critical patch update - oct2020_SCRUTI_2_42_18_4</option>
+                        </select>
+                    </div>
+
+                    <div class="field mb-4">
+                        <label for="type-proyect">
+                            <h4 class="mb-1"> Tipo de proyecto</h4>
+                        </label>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Evaluación</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Soporte Licencias</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Actualización firewall</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Conexión Redes</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field mb-4">
+                        <label for="type-proyect">
+                            <h4 class="mb-1"> Tipo de servicio</h4>
+                        </label>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Hacking Ético</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Firewall</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Escaneo de base de datos</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Limpieza de malware</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field">
+                        <h4 class="mb-3">Estado de vulnerabilidad:</h4>
+                        <ul>
+                            <li class="has-text-left">
+                                <label
+                                    class="has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Detectada</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Asignada a</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">En desarrollo</span>
+                                </label>
+                            </li>
+                            <li class="has-text-left">
+                                <label
+                                    class=" has-width-max-content is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center">
+                                    <input type="checkbox" class=" mr-4">
+                                    <span class="has-no-decoration has-text-left">Resuelta</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-primary is-radius">Aplicar</button>
+                <button class="button is-default is-radius">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+
+</div>
 <!-- Asignar a -->
 <div id="modal-asignacion" class="modal ">
     <div class="modal-background"></div>

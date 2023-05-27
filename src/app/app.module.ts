@@ -38,6 +38,7 @@ import {
   HtmlImgComponent,
   HtmlCheckComponent,
   HtmlFilterComponent,
+  HtmlToogleComponent
 } from './html-table/html-table.component';
 import { MenuComponent } from './menu/menu.component';
 import {
@@ -86,6 +87,7 @@ import { LoginBoardComponent } from './login/login-board.component';
     HtmlImgComponent,
     HtmlCheckComponent,
     HtmlFilterComponent,
+    HtmlToogleComponent,
     MenuComponent,
     LoginComponent,
     //LoginBoardComponent,

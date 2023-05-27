@@ -9,6 +9,7 @@
         </tr>
         <tr [ngClass]="data.class" *ngFor="let data of tableOptions.values">
             <td [ngClass]="column.class" *ngFor="let column of data.values">
+                <app-html-toogle *ngIf="column.type === 'toogle'"></app-html-toogle>
                 <app-html-check [column]="column" *ngIf="column.type === 'check'"></app-html-check>
                 <app-html-links [values]="column.value" *ngIf="column.type === 'links'"></app-html-links>
                 <span *ngIf="column.span" [ngClass]="column.spanClass"></span>

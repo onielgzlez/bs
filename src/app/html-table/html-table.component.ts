@@ -67,6 +67,14 @@ export class HtmlDefaultComponent {
 }
 
 @Component({
+  selector: 'app-html-toogle',
+  templateUrl: './toogle.component.html',
+})
+export class HtmlToogleComponent {
+  @Input() column: any;
+}
+
+@Component({
   selector: 'app-html-icon',
   templateUrl: './icon.component.html',
 })

@@ -14,36 +14,37 @@ export class ProjectComponent implements OnInit {
       {
         field: 'id',
         label: 'ID',
-        class: 'has-text-left pl-6',
+        class: 'has-text-left is-col-table-10 pl-6',
       },
       {
         field: 'name',
         label: 'Nombre',
-        class: 'has-text-left',
+        class: 'has-text-left is-col-table-20',
       },
       {
         field: 'type',
         label: 'Tipo',
-        class: 'has-text-left',
+        class: 'has-text-left is-col-table-10',
       },
       {
         field: 'service',
         label: 'Servicio',
-        class: 'has-text-left',
+        class: 'has-text-left is-col-table-10',
       },
       {
         field: 'status',
         label: 'Estado',
-        class: 'has-text-left',
+        class: 'has-text-left is-col-table-10',
       },
       {
         field: 'created_at',
         label: 'Creación',
-        class: 'has-text-left',
+        class: 'has-text-left is-col-table-10',
       },
       {
         field: 'actions',
         label: 'Acciones',
+        class: 'has-text-left is-col-table-20',
       },
     ];
     this.values = [
@@ -303,7 +304,7 @@ export class ProjectComponent implements OnInit {
       },
     ];
     this.class =
-      'card is-size-6 px-3 is-fullwidth table  is-relative has-left-border has-border-left-gradient has-shadow';
+      'px-3 is-fullwidth table is-relative is-width-700-touch';
   }
 }
 

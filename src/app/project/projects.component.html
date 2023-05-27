@@ -11,7 +11,199 @@
                 <i class="las la-file-excel  is-size-4 "></i>
                 <span class="has-no-decoration">Descargar Excell</span>
             </button>
+            <button class="mr-3 is-pulled-right is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center js-modal-trigger" data-target="modal-filtro-proyecto">
+                <i class="las la-filter  is-size-4 "></i>
+                <span class="has-no-decoration" >Filtros</span>
+            </button>
         </div>
     </div>
-    <app-html-table [class]="class" [columns]="columns" [values]="values"></app-html-table>
+    <div class="card is-size-6 px-3 is-fullwidth table  is-relative has-left-border has-border-left-gradient has-shadow  is-clipped is-scrolled-touch">                                      
+        <table class="px-3 is-fullwidth table  is-relative is-width-700-touch">
+           <tr>
+               <th class="has-text-left is-col-table-10 pl-6">ID</th>
+               <th class="has-text-left is-col-table-20">Nombre</th>
+               <th class="has-text-left is-col-table-10">Tipo</th>
+               <th class="has-text-left is-col-table-10">Servicio</th>
+               <th class="has-text-left is-col-table-10">Estado</th>
+               <th class="has-text-left is-col-table-10">Creación</th>
+               <th class="has-text-left is-col-table-20">Acciones</th>
+           </tr>
+         </table>
+        <div class="collapse is-collapsed  is-relative  is-width-700-touch">
+            <table  class="px-3 is-fullwidth table  is-relative  mb-0">
+                <tr class="is-bordered-bottom py-3 px-3">
+                    <td class=" is-col-table-10 has-text-left  pl-6">5</td>
+                    <td class=" is-col-table-20 py-4">
+                        <div class="is-flex is-justify-content-space-between">
+                            <a href="proyecto" class="has-no-decoration has-button-hover-sm">CopcopCo</a> 
+                        </div>
+                    </td>
+                    <td class="is-col-table-10">Consultoría</td>
+                    <td class="is-col-table-10">Sistemas Wireless</td>
+                    <td class=" is-col-table-10 has-background-primary-light">Abierto</td>
+                    <td class="is-col-table-10">03/09/2022</td>
+                    <td class=" is-col-table-20 is-max-td"> 
+                        <a href="proyecto" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                            <i class="las la-chart-pie mr-1 is-size-6"></i> Gráficos
+                        </a> 
+                        <a href="tablero" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                            <i class="las la-columns mr-1 is-size-6"></i> Tablero
+                        </a> 
+                        <a href="listado" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                            <i class="las la-list mr-1 is-size-6"></i> Listado
+                        </a> 
+                    </td>
+                </tr>
+            </table>                                   
+            <a 
+                class="collapse-button px-6 py-5 has-button-hover-sm as-button-hover has-background-transparent is-borderless has-no-decoration is-inline-block is-justify-content-flex-end collapse-button-table"
+                role="button"
+                aria-controls="id_ejemplo"
+                aria-expanded="false">
+                <span class="h2 has-text-dark"><i class="las la-angle-up is-size-8"></i></span>
+            </a>
+            <div id="id_ejemplo"
+                class="collapse-content">
+                <table class="px-3 is-fullwidth table  is-relative is-width-700-touch">
+                <tr class="has-background-cyan-dark">
+                    <td class="is-col-table-10 has-text-left  pl-6 ">
+                        10 </td>
+                    <td class="is-col-table-20">
+                        <span class="las la-level-up-alt is-size-7 is-rotate-45"></span>
+                        <a href="proyecto" class="has-no-decoration has-button-hover-sm">CopcopCo RV. Patch 2334-s12</a>
+                    </td>
+                    <td class="is-col-table-10">
+                        Consultoría
+                    </td>
+                    <td class="is-col-table-10">Sistemas Wireless</td>
+                    <td class="is-col-table-10 has-background-primary-light">Abierto</td>
+                    <td class="is-col-table-10">12/10/2022</td>
+                    <td class="is-col-table-20 is-max-td"> 
+                        <a href="proyecto" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                            <i class="las la-chart-pie mr-1 is-size-6"></i> Gráficos
+                        </a> 
+                        <a href="tablero" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                            <i class="las la-columns mr-1 is-size-6"></i> Tablero
+                        </a> 
+                        <a href="listado" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                            <i class="las la-list mr-1 is-size-6"></i> Listado
+                        </a> 
+                    </td>   
+                </tr>
+            <tr class="has-background-cyan-dark">
+                <td class="has-text-left  pl-6">
+                    14 </td>
+                <td>
+                    <span class="las la-level-up-alt is-size-7 is-rotate-45"></span>
+                    <a href="proyecto" class="has-no-decoration has-button-hover-sm">CopcopCo RV. Patch 2344-s23</a>
+                </td>
+                <td>
+                    Consultoría
+                </td>
+                <td>Sistemas Wireless</td>
+                <td class="has-background-primary-light">Abierto</td>
+                <td>09/11/2022</td>
+                <td class="is-max-td"> 
+                    <a href="proyecto" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                        <i class="las la-chart-pie mr-1 is-size-6"></i> Gráficos
+                    </a> 
+                    <a href="tablero" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                        <i class="las la-columns mr-1 is-size-6"></i> Tablero
+                    </a> 
+                    <a href="listado" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                        <i class="las la-list mr-1 is-size-6"></i> Listado
+                    </a> 
+                </td>   
+            </tr>
+                </table>
+            </div>
+        </div>
+        <div class="collapse is-collapsed  is-relative">
+            <table class="px-3 is-fullwidth table  is-relative mb-0 is-width-700-touch">
+                <tr class="is-bordered-bottom py-3 px-3">
+                    <td class="is-col-table-10 has-text-left  pl-6">6</td>
+                    <td class="is-col-table-20 py-4">
+                        <div class="is-flex is-justify-content-space-between">
+                            <a href="proyecto" class="has-no-decoration has-button-hover-sm">Copco</a></div>
+                    </td>
+                    <td  class="is-col-table-10">Consultoría</td>
+                    <td  class="is-col-table-10">CISO as a service</td>
+                    <td class="is-col-table-10 has-background-danger-light">Cerrado</td>
+                    <td class="is-col-table-10">02/11/2022</td>
+                    <td class="is-col-table-20 is-max-td"> 
+                        <a href="proyecto" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                            <i class="las la-chart-pie mr-1 is-size-6"></i>Gráficos
+                        </a> 
+                        <a href="tablero" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                            <i class="las la-columns mr-1 is-size-6"></i>Tablero
+                        </a> 
+                        <a href="listado" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                            <i class="las la-list mr-1 is-size-6"></i>Listado
+                        </a> 
+                    </td>
+                </tr>
+            </table>                                   
+            <a 
+                class="collapse-button px-6 py-5 has-button-hover-sm as-button-hover has-background-transparent is-borderless has-no-decoration is-inline-block is-justify-content-flex-end collapse-button-table"
+                role="button"
+                aria-controls="id_ejemplo"
+                aria-expanded="false">
+                <span class="h2 has-text-dark"><i class="las la-angle-up is-size-8"></i></span>
+            </a>
+            <div id="id_ejemplo" class="collapse-content is-width-700-touch">
+                <table class="px-3 is-fullwidth table  is-relative ">
+                    <tr class="has-background-cyan-dark">
+                        <td class="is-col-table-10 has-text-left  pl-6">
+                            10 </td>
+                        <td>
+                            <span class="las la-level-up-alt is-size-7 is-rotate-45"></span>
+                            <a href="proyecto" class="has-no-decoration has-button-hover-sm">CopcopCo RV. Patch 2334-s12</a>
+                        </td>
+                        <td class="is-col-table-10">
+                            Consultoría
+                        </td>
+                        <td>Sistemas Wireless</td>
+                        <td class="is-col-table-10 has-background-primary-light">Abierto</td>
+                        <td class="is-col-table-10">12/10/2022</td>
+                        <td class="is-col-table-10 is-max-td"> 
+                            <a href="proyecto" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                                <i class="las la-chart-pie mr-1 is-size-6"></i> Gráficos
+                            </a> 
+                            <a href="tablero" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                                <i class="las la-columns mr-1 is-size-6"></i> Tablero
+                            </a> 
+                            <a href="listado" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                                <i class="las la-list mr-1 is-size-6"></i> Listado
+                            </a> 
+                        </td>   
+                    </tr>
+                    <tr class="has-background-cyan-dark">
+                        <td class="is-col-table-10 has-text-left  pl-6">
+                            14 </td>
+                        <td class="is-col-table-20">
+                            <span class="las la-level-up-alt is-size-7 is-rotate-45"></span>
+                            <a href="proyecto" class="has-no-decoration has-button-hover-sm">CopcopCo RV. Patch 2344-s23</a>
+                        </td>
+                        <td class="is-col-table-10">
+                            Consultoría
+                        </td>
+                        <td class="is-col-table-10">Sistemas Wireless</td>
+                        <td class="is-col-table-10 has-background-primary-light">Abierto</td>
+                        <td class="is-col-table-10">09/11/2022</td>
+                        <td class="is-col-table-20 is-max-td"> 
+                            <a href="proyecto" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                                <i class="las la-chart-pie mr-1 is-size-6"></i> Gráficos
+                            </a> 
+                            <a href="tablero" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                                <i class="las la-columns mr-1 is-size-6"></i> Tablero
+                            </a> 
+                            <a href="listado" class="has-no-decoration is-size-7 has-background-transparent is-borderless has-button-hover-sm mr-2 button"> 
+                                <i class="las la-list mr-1 is-size-6"></i> Listado
+                            </a> 
+                        </td>   
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>

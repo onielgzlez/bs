@@ -9,7 +9,7 @@
                 class=" is-pulled-right is-clickable has-button-hover has-background-transparent is-borderless has-no-decoration is-flex is-align-items-center is-justify-content-center js-modal-trigger"
                 data-target="modal-filtro">
                 <i class="las la-filter  is-size-4 "></i>
-                <span class="has-no-decoration">Filtros:</span>
+                <span class="has-no-decoration">Filtros</span>
             </button>
         </div>
     </div>
@@ -75,6 +75,21 @@
 </div>
 <div class="columns is-scroll-mobile">
     <div class="column">
+        <table class="table is-fullwidth p-4 is-radius is-size-6 mb-4   is-relative has-left-border is-clipped has-border-left-gradient has-shadow  ">
+            <tr>
+                <th>Desde</th>
+                <th>Hasta</th>
+            </tr>
+            <tr>
+                <td class="has-text-centered">
+                    <input type="date" class="input is-radius">
+                </td>
+                <td>
+                    <input type="date" class="input is-radius">
+                </td>                   
+            </tr>
+
+    </table>
         <app-html-table [class]="users.class" [columns]="users.columns" [values]="users.values"></app-html-table>
     </div>
 </div>
